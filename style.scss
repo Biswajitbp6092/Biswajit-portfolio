@@ -457,7 +457,7 @@ body{
 
 
 
-.project{
+.project-section{
     padding-block: 8rem;
     .container{
         .heding{
@@ -465,6 +465,83 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .row{
+            .col-md-6{
+                .project{
+                    border-radius: 10px;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: all .50s ease;
+                    &:hover{
+                        box-shadow: 0 0 20px $bs-project-color;
+                        transform: scale(1.1);
+                    }
+                }
+                .project-1{
+                    background-color: $bs-project-color;
+                    padding: 20px;
+                    &:hover{
+                        box-shadow: 0 0 20px $bs-project-color;
+                    }
+                }
+                .project-2{
+                    background-color: $bs-project-color-2;
+                    &:hover{
+                        box-shadow: 0 0 20px $bs-project-color-2;
+                    }
+                }
+                .project-3{
+                    background-color: $bs-project-color-3;
+                    width: 100%;
+                    height: 400px;
+                    overflow: hidden;
+                    &:hover{
+                        box-shadow: 0 0 20px $bs-project-color-3;
+                    }
+                }
+                .project-4{
+                    background-color: $bs-project-color-4;
+                    width: 100%;
+                    height: 400px;
+                    overflow: hidden;
+                    &:hover{
+                        box-shadow: 0 0 20px $bs-project-color-4;
+                    }
+                    
+                }
+            }
+            .col-md-6{
+                .project-titel{
+                    padding-block: 2rem;
+                    .project-heding{
+                        @include project-heding();
+                    }
+                    .project-date{
+                        @include project-date();
+                    }
+                }
+                .title-right{
+                    text-align: right;
+                }
+            }
+        }
+        .git-link{
+            font-family: 'fira sans';
+            font-weight: bold;
+            font-size: 2rem;
+            color: $primary-color;
+            text-decoration: none;
+            display: grid;
+            place-items: center;
+            padding-top: 4rem;
+            transition: all .50s ease;
+            &:hover{
+                text-shadow: 0 0 20px $primary-color;
+                transform: scale(1.1);
+
+            }
+            
         }
     }
 }

@@ -8,6 +8,10 @@ $secondary-color:#2f0d29;
 $btn-color:#380856;
 $btn-color-2:#6c90e8;
 $bs-card-color:#1c0818;
+$bs-project-color:#380856;
+$bs-project-color-2:#387cdf;
+$bs-project-color-3:#58006b;
+$bs-project-color-4:#380856;
 
 
 // font femily
@@ -57,7 +61,7 @@ $bs-card-color:#1c0818;
 }
 
 @mixin heding{
-    font-size: 4rem;
+    font-size:calc(4rem + 1.5vw);
     font-family: 'Oddlini' sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -80,5 +84,18 @@ $bs-card-color:#1c0818;
     border-radius: 20px;
     text-align: center;
     text-transform: capitalize;
+}
+@mixin project-heding{
+    font-family: 'fira sans';
+    font-weight: bold;
+    color: $body-white;
+    font-size: calc(1.375rem + 1.5vw);
+}
+@mixin project-date{
+    font-family: 'fira sans';
+    font-weight: 100;
+    color: $body-white;
+    font-size: calc(0.875rem + 1.5vw);
+
 }
 
