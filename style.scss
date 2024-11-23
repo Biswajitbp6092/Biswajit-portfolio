@@ -201,6 +201,7 @@ body{
                     }
                     .my-images{
                         position: absolute;
+                        top: 25px;
                         margin-top: 50%;
                         margin-left: 50%;
                         transform: translate(-50%, -50%);
@@ -220,18 +221,35 @@ body{
                             position: absolute;
                             top: 180px;
                             left: 0px;
+                            border-radius: 50%;
+                            transition: all .50s ease;
+                            &:hover{
+                                box-shadow: 0 0 20px $primary-color;
+                                transform: scale(1.1);
+                            }
                             
                         }
                         .banner-dribble-icon {
                             position: absolute;
                             top: 180px;
-                            right: 0px;                            
+                            right: 0px;
+                            border-radius: 50%;
+                            transition: all .50s ease;
+                            &:hover{
+                                box-shadow: 0 0 20px $primary-color;
+                                transform: scale(1.1);
+                            }                            
                         }
                         .banner-github-icon {
                             position: absolute;
-                            top: 480px;
-                            right: -90px;
-
+                            top: 565px;
+                            right: -40px;
+                            border-radius: 50%;
+                            transition: all .50s ease;
+                            &:hover{
+                                box-shadow: 0 0 20px $primary-color;
+                                transform: scale(1.1);
+                            }
                         }
                     }
                     
@@ -431,6 +449,22 @@ body{
                     font-size: 1rem;
                 }
             }
+        }
+    }
+}
+
+
+
+
+
+.project{
+    padding-block: 8rem;
+    .container{
+        .heding{
+            @include heding();
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
