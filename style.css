@@ -1,30 +1,26 @@
 @font-face {
   font-family: "Fira Sans";
-  src: url("FiraSans-Light.woff2") format("woff2"), url("FiraSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Fira Sans";
-  src: url("FiraSans-Thin.woff2") format("woff2"), url("FiraSans-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Fira Sans";
-  src: url("FiraSans-Regular.woff2") format("woff2"), url("FiraSans-Regular.woff") format("woff");
+  src: url("font/firasans-light-webfont.woff2") format("woff2"), url("font/firasans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("font/firasans-regular-webfont.woff2") format("woff2"), url("font/firasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("font/firasans-thin-webfont.woff2") format("woff2"), url("font/firasans-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Oddlini";
-  src: url("Oddlini-Regular.woff2") format("woff2"), url("Oddlini-Regular.woff") format("woff");
+  src: url("font/oddlini-regular-webfont.woff2") format("woff2"), url("font/oddlini-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 * {
   margin: 0;
