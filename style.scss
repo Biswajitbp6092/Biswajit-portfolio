@@ -87,7 +87,7 @@ body{
 
 .banner-section{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(120deg,$body-black, $body-black, $primary-color-2,$primary-color);
     position: relative;
     top: 0;
@@ -103,7 +103,7 @@ body{
                         font-style: normal;
                         font-display: swap;
                         color: $body-white-secondary;
-                        font-size: 3.5rem;
+                        font-size: 3rem;
                     }
                     .banner-heding{
                         font-family: 'Oddlini';
