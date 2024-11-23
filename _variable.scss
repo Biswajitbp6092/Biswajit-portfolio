@@ -1,0 +1,75 @@
+// color
+$body-black:#000000;
+$body-white:#ffffff;
+$body-white-secondary:#d9d9d9;
+$primary-color:#d317b8;
+$primary-color-2:#1e0993;
+$secondary-color:#2f0d29;
+$btn-color:#380856;
+$btn-color-2:#6c90e8;
+$bs-card-color:#1c0818;
+
+
+// font femily
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('FiraSans-Light.woff2') format('woff2'),
+        url('FiraSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('FiraSans-Thin.woff2') format('woff2'),
+        url('FiraSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('FiraSans-Regular.woff2') format('woff2'),
+        url('FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oddlini';
+    src: url('Oddlini-Regular.woff2') format('woff2'),
+        url('Oddlini-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin heding{
+    font-size: 4rem;
+    font-family: 'Oddlini' sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    color: $body-white;
+    text-transform: capitalize;
+}
+@mixin paragraph{
+    font-family: 'Fira Sans' sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    font-style: normal;
+    font-display: swap;
+    color: $body-white;
+}
+@mixin my-btn{
+    padding: 10px 40px;
+    cursor: pointer;
+    color: $body-white;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
