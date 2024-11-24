@@ -244,8 +244,8 @@ body{
                         }
                         .banner-github-icon {
                             position: absolute;
-                            top: 565px;
-                            right: -40px;
+                            top: 540px;
+                            right: -60px;
                             border-radius: 50%;
                             transition: all .50s ease;
                             &:hover{
@@ -553,4 +553,163 @@ body{
     }
 }
 // ==============project section end=================
+
+
+// ==============contact me section=================
+.contact-me{
+    .container{
+        .row{
+            .col-md-6{
+                .contact-text{
+                    .heding{
+                        @include heding();
+                    }
+                    .pragraph{
+                        color: $body-white;
+                        font-family: 'fira sans';
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+                }
+                .contact-info{
+                    padding-block: 3.5rem;
+                    .touch-button{
+                        padding-top: 20px;
+                        a{
+                            text-decoration: none;
+                            button{
+                                background: $secondary-color;
+                                border: 1px solid $primary-color;
+                                width: 80%;
+                                height: 50px;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                padding: 10px;
+                                transition: all .50s ease;
+                                &:hover{
+                                    box-shadow: 0 0 10px $primary-color;
+                                }
+                                .mail, .call{
+                                    padding: 6px 10px;
+                                    border-radius: 6px;
+                                    background: $body-black; 
+                                    font-size: 1.5rem;
+                                    color: $body-white;                              
+    
+                                }
+                                .get-touch{
+                                    width: 100%;
+                                    margin-inline: 2rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                                .email, .phone{
+                                    font-size: 1.275rem;
+                                    color: $body-white;
+                                    font-family: 'fira sans';
+                                    font-weight: 600;
+                                }
+                                .fa-arrow-right{
+                                    font-size: 1.5rem;
+                                    color: $body-white;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .social-media ul {
+                    list-style: none;
+                    display: flex;
+                    padding: 0;
+                }
+                
+                .social-media ul li {
+                    padding-right: 0.5rem;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+                .social-media i{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $primary-color;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    backdrop-filter: brightness(88%);
+                    font-size: 20px;
+                    box-shadow: 0 0 20px transparent;
+                    cursor: pointer;
+                    transition: all .50s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                        box-shadow: 0 0 20px $primary-color;
+                    }
+                }
+            }
+            .col-md-6{
+                
+                .send-massege{
+                    width: 100%;
+                    border: 1px solid $primary-color;
+                    box-shadow: 0 0 20px $primary-color;
+                    background: $body-black;
+                    border-radius: 10px;
+                    padding: 20px 40px;
+                    .heding{
+                        font-family: 'fira sans';
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: $primary-color;
+                        padding-bottom: 10px;
+
+                    }
+                    form{
+                        .input-row{
+                            display:flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        .input-box input,textarea,{
+                            width: 100%;
+                            padding: 12px;
+                            font-family: 'fira sans';
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin: 10px 0;
+                            border: 1px solid $primary-color;
+                            outline: none;
+                            border-radius: 5px;
+                            background: transparent;
+                            color: $body-white;
+                            transition: all .50s ease; 
+                        }
+                        input:hover,textarea:hover{
+                            box-shadow: 0 0 10px $primary-color;                        
+                        }
+                        .my-button{
+                            button{
+                                width: 100%;
+                                padding: 12px;
+                                font-family: 'fira sans';
+                                font-size: 1rem;
+                                font-weight: bold;
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// ==============contact me section end=================
 

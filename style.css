@@ -258,8 +258,8 @@ body {
 }
 .banner-section .container .row .col-lg-7 .banner-img .banner-icon .banner-github-icon {
   position: absolute;
-  top: 565px;
-  right: -40px;
+  top: 540px;
+  right: -60px;
   border-radius: 50%;
   transition: all 0.5s ease;
 }
@@ -534,6 +534,143 @@ body {
 }
 .project-section .container .git-link:hover {
   text-shadow: 0 0 20px #d317b8;
+}
+
+.contact-me .container .row .col-md-6 .contact-text .heding {
+  font-size: calc(4rem + 1.5vw);
+  font-family: "Oddlini" sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.contact-me .container .row .col-md-6 .contact-text .pragraph {
+  color: #ffffff;
+  font-family: "fira sans";
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact-me .container .row .col-md-6 .contact-info {
+  padding-block: 3.5rem;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button {
+  padding-top: 20px;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a {
+  text-decoration: none;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button {
+  background: #2f0d29;
+  border: 1px solid #d317b8;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button:hover {
+  box-shadow: 0 0 10px #d317b8;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button .mail, .contact-me .container .row .col-md-6 .contact-info .touch-button a button .call {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #000000;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button .get-touch {
+  width: 100%;
+  margin-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button .email, .contact-me .container .row .col-md-6 .contact-info .touch-button a button .phone {
+  font-size: 1.275rem;
+  color: #ffffff;
+  font-family: "fira sans";
+  font-weight: 600;
+}
+.contact-me .container .row .col-md-6 .contact-info .touch-button a button .fa-arrow-right {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.contact-me .container .row .col-md-6 .social-media ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.contact-me .container .row .col-md-6 .social-media ul li {
+  padding-right: 0.5rem;
+}
+.contact-me .container .row .col-md-6 .social-media ul li:last-child {
+  padding-right: 0;
+}
+.contact-me .container .row .col-md-6 .social-media i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d317b8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 20px;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.contact-me .container .row .col-md-6 .social-media i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #d317b8;
+}
+.contact-me .container .row .col-md-6 .send-massege {
+  width: 100%;
+  border: 1px solid #d317b8;
+  box-shadow: 0 0 20px #d317b8;
+  background: #000000;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+.contact-me .container .row .col-md-6 .send-massege .heding {
+  font-family: "fira sans";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d317b8;
+  padding-bottom: 10px;
+}
+.contact-me .container .row .col-md-6 .send-massege form .input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-me .container .row .col-md-6 .send-massege form .input-box input, .contact-me .container .row .col-md-6 .send-massege form textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: "fira sans";
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  border: 1px solid #d317b8;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.contact-me .container .row .col-md-6 .send-massege form input:hover, .contact-me .container .row .col-md-6 .send-massege form textarea:hover {
+  box-shadow: 0 0 10px #d317b8;
+}
+.contact-me .container .row .col-md-6 .send-massege form .my-button button {
+  width: 100%;
+  padding: 12px;
+  font-family: "fira sans";
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
