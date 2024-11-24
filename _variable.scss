@@ -5,6 +5,7 @@ $body-white-secondary:#d9d9d9;
 $primary-color:#d317b8;
 $primary-color-2:#1e0993;
 $secondary-color:#2f0d29;
+$bs-tertiary-color:#230c18;
 $btn-color:#380856;
 $btn-color-2:#6c90e8;
 $bs-card-color:#1c0818;
@@ -63,7 +64,7 @@ $bs-project-color-4:#380856;
 @mixin paragraph{
     font-family: 'Fira Sans' sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.375rem;
     font-style: normal;
     font-display: swap;
     color: $body-white;
@@ -72,14 +73,18 @@ $bs-project-color-4:#380856;
     padding: 10px 40px;
     cursor: pointer;
     color: $body-white;
-    border-radius: 20px;
+    border-radius: 40px;
     text-align: center;
+    font-family: 'fira sans';
+    font-weight: bold;
+    font-size: 1.275rem;
     text-transform: capitalize;
 }
 @mixin project-heding{
     font-family: 'fira sans';
     font-weight: bold;
     color: $body-white;
+    text-transform: capitalize;
     font-size: calc(1.375rem + 1.5vw);
 }
 @mixin project-date{

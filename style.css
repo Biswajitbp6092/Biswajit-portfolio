@@ -39,7 +39,6 @@ body {
   z-index: 1;
 }
 .nav-section .container .navbar {
-  padding-inline: 2rem;
   background-color: #000000;
   border-radius: 100px;
   position: relative;
@@ -62,6 +61,7 @@ body {
   filter: blur(10px);
 }
 .nav-section .container .navbar .brand-name {
+  padding-left: 2rem;
   font-family: "Oddlini";
   color: #ffffff;
   font-size: 1.5rem;
@@ -87,15 +87,21 @@ body {
   padding: 10px 40px;
   cursor: pointer;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 40px;
   text-align: center;
+  font-family: "fira sans";
+  font-weight: bold;
+  font-size: 1.275rem;
   text-transform: capitalize;
   background-color: #380856;
+  margin-right: 0.5rem;
   transition: 0.5s linear;
+  border: 1px solid transparent;
 }
 .nav-section .container .nav-btn:hover {
   background: transparent;
   color: #ffffff;
+  border: 1px solid #d317b8;
   box-shadow: 0 0 20px #d317b8;
 }
 
@@ -145,14 +151,18 @@ body {
 }
 .banner-section .container .row .col-lg-5 .banner-text .paragraph .vl {
   width: 2px;
-  height: 40px;
+  height: 60px;
   background-color: #ffffff;
 }
 .banner-section .container .row .col-lg-5 .banner-text .paragraph p {
-  font-size: "Fira Sans";
+  font-family: "Fira Sans" sans-serif;
+  font-weight: 300;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-display: swap;
   color: #ffffff;
-  padding-left: 1rem;
-  padding-top: 15px;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
 }
 .banner-section .container .row .col-lg-5 .banner-text .social-media ul {
   list-style: none;
@@ -240,6 +250,8 @@ body {
   left: 0px;
   border-radius: 50%;
   transition: all 0.5s ease;
+  transform: rotate(0deg);
+  animation: rotate 10s infinite;
 }
 .banner-section .container .row .col-lg-7 .banner-img .banner-icon .banner-behance-icon:hover {
   box-shadow: 0 0 20px #d317b8;
@@ -251,6 +263,7 @@ body {
   right: 0px;
   border-radius: 50%;
   transition: all 0.5s ease;
+  animation: rotate 10s infinite;
 }
 .banner-section .container .row .col-lg-7 .banner-img .banner-icon .banner-dribble-icon:hover {
   box-shadow: 0 0 20px #d317b8;
@@ -262,10 +275,19 @@ body {
   right: -60px;
   border-radius: 50%;
   transition: all 0.5s ease;
+  animation: rotate 10s infinite;
 }
 .banner-section .container .row .col-lg-7 .banner-img .banner-icon .banner-github-icon:hover {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(380deg);
+  }
 }
 
 .about-section {
@@ -283,7 +305,7 @@ body {
 .about-section .container .row .col-md-6 .about-text .paragraph {
   font-family: "Fira Sans" sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.375rem;
   font-style: normal;
   font-display: swap;
   color: #ffffff;
@@ -294,11 +316,15 @@ body {
   padding: 10px 40px;
   cursor: pointer;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 40px;
   text-align: center;
+  font-family: "fira sans";
+  font-weight: bold;
+  font-size: 1.275rem;
   text-transform: capitalize;
   display: inline-block;
   background-color: #d317b8;
+  border: 1px solid #d317b8;
   transition: 0.5s linear;
 }
 .about-section .container .row .col-md-6 .about-text .my-btn:hover {
@@ -325,7 +351,7 @@ body {
 .my-skils .container .col-md-6 .title {
   display: block;
   font-family: "Fira Sans";
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
   font-size: 1.5rem;
@@ -438,7 +464,9 @@ body {
 .what-i-do .container .row .col-md-4 .card-heding {
   font-family: "Fira Sans";
   color: #ffffff;
+  font-weight: 900;
   font-size: 2rem;
+  text-transform: capitalize;
   padding-block: 1.5rem;
 }
 .what-i-do .container .row .col-md-4 .card-text {
@@ -510,6 +538,7 @@ body {
   font-family: "fira sans";
   font-weight: bold;
   color: #ffffff;
+  text-transform: capitalize;
   font-size: calc(1.375rem + 1.5vw);
 }
 .project-section .container .row .col-md-6 .project-titel .project-date {
@@ -562,7 +591,8 @@ body {
 }
 .contact-me .container .row .col-md-6 .contact-info .touch-button a button {
   background: #2f0d29;
-  border: 1px solid #d317b8;
+  outline: transparent;
+  border: 0;
   width: 80%;
   height: 50px;
   border-radius: 10px;
@@ -570,9 +600,11 @@ body {
   align-items: center;
   padding: 10px;
   transition: all 0.5s ease;
+  border: 1px solid transparent;
 }
 .contact-me .container .row .col-md-6 .contact-info .touch-button a button:hover {
   box-shadow: 0 0 10px #d317b8;
+  border: 1px solid #d317b8;
 }
 .contact-me .container .row .col-md-6 .contact-info .touch-button a button .mail, .contact-me .container .row .col-md-6 .contact-info .touch-button a button .call {
   padding: 6px 10px;
@@ -629,9 +661,7 @@ body {
 }
 .contact-me .container .row .col-md-6 .send-massege {
   width: 100%;
-  border: 1px solid #d317b8;
-  box-shadow: 0 0 20px #d317b8;
-  background: #000000;
+  background: linear-gradient(90deg, #230c18, #000000);
   border-radius: 10px;
   padding: 20px 40px;
 }
@@ -649,28 +679,104 @@ body {
 }
 .contact-me .container .row .col-md-6 .send-massege form .input-box input, .contact-me .container .row .col-md-6 .send-massege form textarea {
   width: 100%;
-  padding: 12px;
+  padding-block: 10px;
+  padding-left: 20px;
   font-family: "fira sans";
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 0;
-  border: 1px solid #d317b8;
   outline: none;
-  border-radius: 5px;
-  background: transparent;
+  border-radius: 20px;
+  background: #2f0d29;
+  outline: 0;
+  border: 0;
   color: #ffffff;
+  border: 1px solid transparent;
   transition: all 0.5s ease;
 }
 .contact-me .container .row .col-md-6 .send-massege form input:hover, .contact-me .container .row .col-md-6 .send-massege form textarea:hover {
+  border: 1px solid #d317b8;
   box-shadow: 0 0 10px #d317b8;
+  background: transparent;
 }
 .contact-me .container .row .col-md-6 .send-massege form .my-button button {
   width: 100%;
-  padding: 12px;
+  padding: 6px;
   font-family: "fira sans";
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
   font-weight: bold;
   margin: 10px 0;
+  background: #d317b8;
+  border: 1px solid #d317b8;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.contact-me .container .row .col-md-6 .send-massege form .my-button button i {
+  padding-left: 1rem;
+}
+.contact-me .container .row .col-md-6 .send-massege form .my-button button:hover {
+  background: transparent;
+  box-shadow: 0 0 20px #d317b8;
+}
+
+.follow-me {
+  padding-block: 5rem;
+}
+.follow-me .container .row .col-md-6 .heding {
+  font-size: calc(4rem + 1.5vw);
+  font-family: "Oddlini" sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.follow-me .container .row .col-md-6 .folow-icon {
+  display: grid;
+  place-items: center;
+}
+.follow-me .container .row .col-md-6 .folow-icon ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 4rem;
+}
+.follow-me .container .row .col-md-6 .folow-icon ul li {
+  padding-right: 0;
+}
+.follow-me .container .row .col-md-6 .folow-icon ul li i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d317b8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 3rem;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.follow-me .container .row .col-md-6 .folow-icon ul li i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #d317b8;
+}
+
+.footer-section .container .row .col-12 .footer-contain hr {
+  width: 100%;
+  height: 2px;
+  background: #d317b8;
+  opacity: 100;
+}
+.footer-section .container .row .col-12 .footer-contain p {
+  text-align: center;
+  font-family: "fira sans";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  padding-block: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
