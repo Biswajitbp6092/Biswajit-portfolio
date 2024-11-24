@@ -200,11 +200,6 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-.banner-section .container .row .col-lg-7 .banner-img .img-background img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
 .banner-section .container .row .col-lg-7 .banner-img .banner-img-border {
   width: 650px;
   height: 650px;
@@ -222,6 +217,8 @@ body {
 }
 .banner-section .container .row .col-lg-7 .banner-img .my-images {
   position: absolute;
+  width: 50%;
+  height: auto;
   top: 25px;
   margin-top: 50%;
   margin-left: 50%;
@@ -474,7 +471,6 @@ body {
 }
 .project-section .container .row .col-md-6 .project:hover {
   box-shadow: 0 0 20px #380856;
-  transform: scale(1.1);
 }
 .project-section .container .row .col-md-6 .project-1 {
   background-color: #380856;
@@ -538,7 +534,6 @@ body {
 }
 .project-section .container .git-link:hover {
   text-shadow: 0 0 20px #d317b8;
-  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

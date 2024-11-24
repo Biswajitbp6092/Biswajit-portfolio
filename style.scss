@@ -8,6 +8,9 @@ body{
     background-color: $body-black;
 }
 
+
+
+// ==============nav section =================
 .nav-section{
     position: absolute;
     left: 0;
@@ -83,8 +86,10 @@ body{
     }
 
 }
+// ==============nav section end =================
 
 
+// ==============banner section =================
 .banner-section{
     width: 100%;
     height: 100vh;
@@ -178,11 +183,6 @@ body{
                         display: flex;
                         justify-content: center;
                         overflow: hidden;
-                        img{
-                            width: 100%;
-                            height: auto;
-                            object-fit: contain;
-                        }
                     }
                     .banner-img-border {
                         width:650px;
@@ -201,6 +201,8 @@ body{
                     }
                     .my-images{
                         position: absolute;
+                        width: 50%;
+                        height: auto;
                         top: 25px;
                         margin-top: 50%;
                         margin-left: 50%;
@@ -259,10 +261,15 @@ body{
     }
 
 }
+// ==============banner section end=================
 
 
 
 
+
+
+
+// ==============about section =================
 .about-section{
     padding-block: 8rem;
     .container{
@@ -300,10 +307,11 @@ body{
         }
     }
 }
+// ==============about section  end=================
 
 
 
-
+// ==============My skils section =================
 .my-skils{
     .container{
         .heding{
@@ -407,12 +415,13 @@ body{
         }
     }
 }
+// ==============My skils section end =================
 
 
 
 
 
-
+// ==============what i do section =================
 .what-i-do{
     .container{
         .heding{
@@ -452,11 +461,11 @@ body{
         }
     }
 }
+// ==============what i do section end =================
 
 
 
-
-
+// ==============project section =================
 .project-section{
     padding-block: 8rem;
     .container{
@@ -475,7 +484,6 @@ body{
                     transition: all .50s ease;
                     &:hover{
                         box-shadow: 0 0 20px $bs-project-color;
-                        transform: scale(1.1);
                     }
                 }
                 .project-1{
@@ -538,11 +546,11 @@ body{
             transition: all .50s ease;
             &:hover{
                 text-shadow: 0 0 20px $primary-color;
-                transform: scale(1.1);
 
             }
             
         }
     }
 }
+// ==============project section end=================
 
