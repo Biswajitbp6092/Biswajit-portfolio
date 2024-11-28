@@ -89,12 +89,29 @@ li {
 }
 .nav-section .container .navbar .nav-menu .nav-link li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #bababa;
   font-family: "Fira Sans";
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
   font-size: 1rem;
+  position: relative;
+}
+.nav-section .container .navbar .nav-menu .nav-link li a:hover {
+  color: #ffffff;
+}
+.nav-section .container .navbar .nav-menu .nav-link li a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d317b8;
+  transition: all 0.5s;
+}
+.nav-section .container .navbar .nav-menu .nav-link li a:hover::after {
+  width: 100%;
 }
 .nav-section .container .navbar .nav-menu .nav-link .nav-contact {
   display: none;
@@ -154,7 +171,7 @@ li {
   font-weight: 100;
   font-style: normal;
   font-display: swap;
-  color: #d9d9d9;
+  color: #bababa;
   font-size: 3rem;
 }
 .banner-section .container .row .col-md-5 .banner-text .banner-heding {
@@ -867,6 +884,12 @@ li {
     padding: 2rem;
     background-color: #230c18;
     transition: 0.5s linear;
+  }
+  .nav-section .container .navbar .nav-menu::before {
+    content: none;
+  }
+  .nav-section .container .navbar .nav-menu::after {
+    content: none;
   }
   .nav-section .container .navbar .nav-menu .nav-link {
     flex-direction: column;
