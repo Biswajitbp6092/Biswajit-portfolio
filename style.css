@@ -215,7 +215,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section {
-    height: 120vh;
+    height: 108vh;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -242,6 +242,11 @@ a.back-to-top {
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .banner-top-heding {
     font-size: 1.575rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .banner-top-heding {
+    font-size: 2rem;
   }
 }
 .banner-section .banner-container .banner-text .banner-heding {
@@ -283,6 +288,12 @@ a.back-to-top {
   color: #ffffff;
   padding-left: 1.2rem;
   padding-top: 1rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-text .paragraph p {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .paragraph p {
@@ -339,6 +350,13 @@ a.back-to-top {
   .banner-section .banner-container .banner-img .img-background {
     width: 250px;
     height: 250px;
+    top: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .img-background {
+    width: 380px;
+    height: 360px;
   }
 }
 .banner-section .banner-container .banner-img .banner-img-border {
@@ -358,8 +376,15 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-img-border {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
+    top: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .banner-img-border {
+    width: 400px;
+    height: 380px;
   }
 }
 .banner-section .banner-container .banner-img .my-images {
@@ -392,7 +417,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-icon .banner-behance-icon {
-    top: 300px;
+    top: 220px;
     left: 150px;
   }
 }
@@ -413,6 +438,17 @@ a.back-to-top {
   transition: all 0.5s ease;
   animation: rotate 10s infinite;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
+    top: 220px;
+    right: 150px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon img {
+    width: 40px;
+  }
+}
 .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon:hover {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
@@ -424,6 +460,17 @@ a.back-to-top {
   border-radius: 50%;
   transition: all 0.5s ease;
   animation: rotate 10s infinite;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
+    top: 370px;
+    right: 110px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon img {
+    width: 40px;
+  }
 }
 .banner-section .banner-container .banner-img .banner-icon .banner-github-icon:hover {
   box-shadow: 0 0 20px #d317b8;
@@ -456,6 +503,14 @@ a.back-to-top {
   cursor: pointer;
   z-index: 3;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .banner-container .banner-img .banner-icon .my-cv {
+    width: 50px;
+    height: 50px;
+    top: 350px;
+    left: 110px;
+  }
+}
 .banner-section .banner-container .banner-img .banner-icon .my-cv::after, .banner-section .banner-container .banner-img .banner-icon .my-cv::before {
   content: "";
   position: absolute;
@@ -476,6 +531,8 @@ a.back-to-top {
 }
 .banner-section .banner-container .banner-img .banner-icon .my-cv i, .banner-section .banner-container .banner-img .banner-icon .my-cv span {
   z-index: 3;
+  font-size: 1.375rem;
+  line-height: 5px;
 }
 @keyframes pluse {
   100% {
@@ -487,6 +544,11 @@ a.back-to-top {
 .about-section {
   padding-block: 8rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-section {
+    padding-block: 3rem;
+  }
+}
 .about-section .about-container .about-text .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
@@ -495,6 +557,12 @@ a.back-to-top {
   font-display: swap;
   color: #ffffff;
   text-transform: capitalize;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-section .about-container .about-text .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 .about-section .about-container .about-text .paragraph {
   font-family: "Fira Sans" sans-serif;
@@ -505,6 +573,12 @@ a.back-to-top {
   color: #ffffff;
   line-height: 160%;
   padding-bottom: 2rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-section .about-container .about-text .paragraph {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
 }
 .about-section .about-container .about-text .my-btn {
   padding: 10px 40px;
@@ -527,6 +601,9 @@ a.back-to-top {
   box-shadow: 0 0 20px #d317b8;
 }
 
+.my-skils .skils-container {
+  padding-top: 4rem;
+}
 .my-skils .skils-container .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
@@ -537,6 +614,12 @@ a.back-to-top {
   text-transform: capitalize;
   display: grid;
   place-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .my-skils .skils-container .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 .my-skils .skils-container .skill-box {
   width: 100%;
@@ -550,6 +633,11 @@ a.back-to-top {
   font-display: swap;
   font-size: 1.5rem;
   color: #ffffff;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .my-skils .skils-container .title {
+    font-size: 1rem;
+  }
 }
 .my-skils .skils-container .skill-bar {
   width: 100%;
@@ -632,6 +720,9 @@ a.back-to-top {
   display: none;
 }
 
+.what-i-do .what-i-do-container {
+  padding-top: 4rem;
+}
 .what-i-do .what-i-do-container .heding {
   display: grid;
   place-items: center;
@@ -642,6 +733,12 @@ a.back-to-top {
   font-display: swap;
   color: #ffffff;
   text-transform: capitalize;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .what-i-do .what-i-do-container .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 .what-i-do .what-i-do-container .card {
   margin-top: 1rem;
@@ -654,6 +751,11 @@ a.back-to-top {
   transition: all 0.5s ease;
   cursor: pointer;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .what-i-do .what-i-do-container .card img {
+    width: 70%;
+  }
+}
 .what-i-do .what-i-do-container .card:hover {
   box-shadow: 0 0 20px #d317b8;
 }
@@ -665,6 +767,12 @@ a.back-to-top {
   text-transform: capitalize;
   padding-block: 1.5rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .what-i-do .what-i-do-container .card-heding {
+    font-size: 1.375rem;
+    padding-block: 1rem;
+  }
+}
 .what-i-do .what-i-do-container .card-text {
   font-family: "Fira Sans";
   color: #ffffff;
@@ -674,6 +782,11 @@ a.back-to-top {
 
 .project-section {
   padding-block: 8rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-section {
+    padding-block: 3rem;
+  }
 }
 .project-section .Project-container .heding {
   font-size: calc(3rem + 1.5vw);
@@ -686,6 +799,12 @@ a.back-to-top {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-section .Project-container .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 .project-section .Project-container .project {
   border-radius: 10px;
@@ -764,6 +883,11 @@ a.back-to-top {
 .contact-me {
   padding-top: 6rem;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me {
+    padding-top: 0rem;
+  }
+}
 .contact-me .contact-me-container .contact-text .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
@@ -773,14 +897,30 @@ a.back-to-top {
   color: #ffffff;
   text-transform: capitalize;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-text .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+}
 .contact-me .contact-me-container .contact-text .pragraph {
   color: #ffffff;
   font-family: "fira sans";
   font-size: 2rem;
   font-weight: 600;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-text .pragraph {
+    font-size: 1rem;
+  }
+}
 .contact-me .contact-me-container .contact-info {
   padding-block: 3.5rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info {
+    padding-block: 1rem;
+  }
 }
 .contact-me .contact-me-container .contact-info .touch-button {
   padding-top: 20px;
@@ -801,6 +941,11 @@ a.back-to-top {
   transition: all 0.5s ease;
   border: 1px solid transparent;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button {
+    width: 100%;
+  }
+}
 .contact-me .contact-me-container .contact-info .touch-button a button:hover {
   box-shadow: 0 0 10px #d317b8;
   border: 1px solid #d317b8;
@@ -812,6 +957,11 @@ a.back-to-top {
   font-size: 1.5rem;
   color: #ffffff;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button .mail, .contact-me .contact-me-container .contact-info .touch-button a button .call {
+    font-size: 1rem;
+  }
+}
 .contact-me .contact-me-container .contact-info .touch-button a button .get-touch {
   width: 100%;
   margin-inline: 2rem;
@@ -819,15 +969,30 @@ a.back-to-top {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button .get-touch {
+    margin-inline: 10px;
+  }
+}
 .contact-me .contact-me-container .contact-info .touch-button a button .email, .contact-me .contact-me-container .contact-info .touch-button a button .phone {
   font-size: 1.275rem;
   color: #ffffff;
   font-family: "fira sans";
   font-weight: 600;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button .email, .contact-me .contact-me-container .contact-info .touch-button a button .phone {
+    font-size: 1rem;
+  }
+}
 .contact-me .contact-me-container .contact-info .touch-button a button .fa-arrow-right {
   font-size: 1.5rem;
   color: #ffffff;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button .fa-arrow-right {
+    font-size: 1rem;
+  }
 }
 .contact-me .contact-me-container .social-media ul {
   list-style: none;
@@ -863,6 +1028,11 @@ a.back-to-top {
   background: linear-gradient(90deg, #230c18, #000000);
   border-radius: 10px;
   padding: 20px 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .send-massege {
+    padding: 5px;
+  }
 }
 .contact-me .contact-me-container .send-massege .heding {
   font-family: "fira sans";
@@ -905,6 +1075,11 @@ a.back-to-top {
   border-radius: 50px;
   transition: all 0.5s ease;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .send-massege form .my-button button {
+    font-size: 1rem;
+  }
+}
 .contact-me .contact-me-container .send-massege form .my-button button i {
   padding-left: 1rem;
 }
@@ -924,6 +1099,12 @@ a.back-to-top {
   font-display: swap;
   color: #ffffff;
   text-transform: capitalize;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .follow-me .follow-me-container .heding {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 .follow-me .follow-me-container .folow-icon {
   display: grid;
@@ -973,54 +1154,58 @@ a.back-to-top {
 }
 
 @media (max-width: 768px) {
-  .nav-section .container {
+  .nav-section .nav-container {
+    --bs-gutter-x: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100vw;
     --bs-gutter-x: 0;
   }
-  .nav-section .container .navbar {
+  .nav-section .nav-container .navbar {
     border-radius: 0;
     top: 0;
   }
-  .nav-section .container .navbar .brand-name {
+  .nav-section .nav-container .navbar .brand-name {
     font-size: 1.275rem;
   }
-  .nav-section .container .navbar .toogle {
+  .nav-section .nav-container .navbar .toogle {
     display: block;
     padding-right: 1rem;
   }
-  .nav-section .container .navbar .nav-menu {
+  .nav-section .nav-container .navbar .nav-menu {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    top: 60px;
-    left: -600px;
+    top: 58px;
+    left: -100%;
     padding: 2rem;
     background-color: #230c18;
     transition: 0.5s linear;
   }
-  .nav-section .container .navbar .nav-menu::before {
+  .nav-section .nav-container .navbar .nav-menu::before {
     content: none;
   }
-  .nav-section .container .navbar .nav-menu::after {
+  .nav-section .nav-container .navbar .nav-menu::after {
     content: none;
   }
-  .nav-section .container .navbar .nav-menu .nav-link {
+  .nav-section .nav-container .navbar .nav-menu .nav-link {
     flex-direction: column;
     align-items: self-start;
     gap: 2.5rem;
     transition: 0.5s linear;
   }
-  .nav-section .container .navbar .nav-menu .nav-link li a {
+  .nav-section .nav-container .navbar .nav-menu .nav-link li a {
     font-size: 1.375rem;
     font-weight: bolder;
     text-transform: capitalize;
   }
-  .nav-section .container .navbar .nav-menu .nav-link .nav-btn {
+  .nav-section .nav-container .navbar .nav-menu .nav-link .nav-btn {
     display: none;
   }
-  .nav-section .container .navbar .nav-menu .nav-link .nav-contact {
+  .nav-section .nav-container .navbar .nav-menu .nav-link .nav-contact {
     display: block;
   }
-  .nav-section .container .navbar .active-nav {
+  .nav-section .nav-container .navbar .active-nav {
     left: 0;
   }
 }

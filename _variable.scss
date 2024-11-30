@@ -1,3 +1,4 @@
+@use '_breakpoints'as *;
 // color
 $body-black:#000000;
 $body-white:#ffffff;
@@ -60,6 +61,10 @@ $bs-project-color-4:#380856;
     font-display: swap;
     color: $body-white;
     text-transform: capitalize;
+    @include mobile-only{
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
 }
 @mixin paragraph{
     font-family: 'Fira Sans' sans-serif;
@@ -68,6 +73,10 @@ $bs-project-color-4:#380856;
     font-style: normal;
     font-display: swap;
     color: $body-white;
+    @include mobile-only{
+        font-size:1rem;
+        padding-top: 1rem;
+    }
 }
 @mixin my-btn{
     padding: 10px 40px;
