@@ -24,6 +24,19 @@
     });
 })();
 
+(function(){
+    let skillPerAll = document.querySelectorAll('.skill-per');
+    skillPerAll.forEach(function(skillPar){
+        setTimeout(function(){
+            skillPar.children[0].style.display = 'block';
+        }, 1000)
+    });
+})();
+
+(function(){
+
+})();
+
 
 
 $(document).ready(function () {

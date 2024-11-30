@@ -47,6 +47,7 @@ li {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
 }
 
 @keyframes navslideDown {
@@ -144,6 +145,18 @@ a.back-to-top {
 }
 .nav-section .nav-container .navbar .nav-menu .nav-link li a:hover::after {
   width: 100%;
+}
+.nav-section .nav-container .navbar .nav-menu .nav-link li a.active {
+  color: #ffffff;
+}
+.nav-section .nav-container .navbar .nav-menu .nav-link li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d317b8;
 }
 .nav-section .nav-container .navbar .nav-menu .nav-link .nav-contact {
   display: none;
@@ -463,7 +476,7 @@ a.back-to-top {
 }
 .my-skils .skils-container .skill-box {
   width: 100%;
-  margin: 20px 0px;
+  margin: 20px 0px 30px;
 }
 .my-skils .skils-container .title {
   display: block;
@@ -509,7 +522,6 @@ a.back-to-top {
 }
 .my-skils .skils-container .skill-bar .javascript {
   width: 60%;
-  animation-delay: 0.5s;
 }
 .my-skils .skils-container .skill-bar .react {
   width: 75%;
@@ -541,8 +553,8 @@ a.back-to-top {
   }
 }
 .my-skils .skils-container .skill-bar .tooltip {
-  position: absolute;
-  right: -5px;
+  position: relative;
+  left: 100%;
   top: -30px;
   font-family: "fira sans";
   font-size: 16px;
@@ -552,6 +564,8 @@ a.back-to-top {
   padding: 2px 6px;
   border-radius: 3px;
   opacity: 1;
+  overflow: hidden;
+  display: none;
 }
 
 .what-i-do .what-i-do-container .heding {
@@ -792,11 +806,6 @@ a.back-to-top {
   font-weight: bold;
   color: #d317b8;
   padding-bottom: 10px;
-}
-.contact-me .contact-me-container .send-massege form .input-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .contact-me .contact-me-container .send-massege form .input-box input, .contact-me .contact-me-container .send-massege form textarea {
   width: 100%;
