@@ -1,0 +1,22 @@
+// === Breakpoint Variables ===
+$dx8-mobile-width: 320px;
+$dx8-tablet-width: 768px;
+$dx8-desktop-width: 1200px;
+
+@mixin mobile-only {
+  @media (min-width: #{$dx8-mobile-width}) and (max-width: #{$dx8-tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: #{$dx8-tablet-width}) and (max-width: #{$dx8-desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$dx8-desktop-width}) {
+    @content;
+  }
+}

@@ -40,13 +40,45 @@ li {
   list-style: none;
 }
 
+.is-sticky {
+  position: fixed !important;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  animation: navslideDown 0.5s ease-out;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+@keyframes navslideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
 .nav-section {
   position: absolute;
   left: 0;
   right: 0;
   z-index: 1;
 }
-.nav-section .container .navbar {
+.nav-section .nav-container .navbar {
   display: flex;
   align-items: center;
   background-color: #000000;
@@ -54,7 +86,7 @@ li {
   position: relative;
   top: 10px;
 }
-.nav-section .container .navbar::after, .nav-section .container .navbar::before {
+.nav-section .nav-container .navbar::after, .nav-section .nav-container .navbar::before {
   content: "";
   position: absolute;
   left: -2px;
@@ -67,27 +99,27 @@ li {
   z-index: -1;
   animation: glow 20s linear infinite;
 }
-.nav-section .container .navbar::after {
+.nav-section .nav-container .navbar::after {
   filter: blur(10px);
 }
-.nav-section .container .navbar .brand-name {
+.nav-section .nav-container .navbar .brand-name {
   padding-left: 2rem;
   font-family: "Oddlini";
   color: #ffffff;
   font-size: 1.5rem;
 }
-.nav-section .container .navbar .nav-menu .nav-link {
+.nav-section .nav-container .navbar .nav-menu .nav-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 0;
 }
-.nav-section .container .navbar .nav-menu .nav-link li {
+.nav-section .nav-container .navbar .nav-menu .nav-link li {
   list-style: none;
   padding-right: 2rem;
 }
-.nav-section .container .navbar .nav-menu .nav-link li a {
+.nav-section .nav-container .navbar .nav-menu .nav-link li a {
   text-decoration: none;
   color: #bababa;
   font-family: "Fira Sans";
@@ -97,10 +129,10 @@ li {
   font-size: 1rem;
   position: relative;
 }
-.nav-section .container .navbar .nav-menu .nav-link li a:hover {
+.nav-section .nav-container .navbar .nav-menu .nav-link li a:hover {
   color: #ffffff;
 }
-.nav-section .container .navbar .nav-menu .nav-link li a::after {
+.nav-section .nav-container .navbar .nav-menu .nav-link li a::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -110,13 +142,13 @@ li {
   background-color: #d317b8;
   transition: all 0.5s;
 }
-.nav-section .container .navbar .nav-menu .nav-link li a:hover::after {
+.nav-section .nav-container .navbar .nav-menu .nav-link li a:hover::after {
   width: 100%;
 }
-.nav-section .container .navbar .nav-menu .nav-link .nav-contact {
+.nav-section .nav-container .navbar .nav-menu .nav-link .nav-contact {
   display: none;
 }
-.nav-section .container .navbar .nav-menu .nav-link .nav-btn {
+.nav-section .nav-container .navbar .nav-menu .nav-link .nav-btn {
   padding: 10px 40px;
   cursor: pointer;
   color: #ffffff;
@@ -131,13 +163,13 @@ li {
   transition: 0.5s linear;
   border: 1px solid transparent;
 }
-.nav-section .container .navbar .nav-menu .nav-link .nav-btn:hover {
+.nav-section .nav-container .navbar .nav-menu .nav-link .nav-btn:hover {
   background: transparent;
   color: #ffffff;
   border: 1px solid #d317b8;
   box-shadow: 0 0 20px #d317b8;
 }
-.nav-section .container .navbar .toogle {
+.nav-section .nav-container .navbar .toogle {
   display: none;
   font-size: 2rem;
   color: #ffffff;
@@ -163,10 +195,10 @@ li {
   top: 0;
   overflow: hidden;
 }
-.banner-section .container .row .col-md-5 .banner-text {
+.banner-section .banner-container .banner-text {
   margin-top: 20%;
 }
-.banner-section .container .row .col-md-5 .banner-text .banner-top-heding {
+.banner-section .banner-container .banner-text .banner-top-heding {
   font-family: "Fira Sans";
   font-weight: 100;
   font-style: normal;
@@ -174,7 +206,7 @@ li {
   color: #bababa;
   font-size: 3rem;
 }
-.banner-section .container .row .col-md-5 .banner-text .banner-heding {
+.banner-section .banner-container .banner-text .banner-heding {
   font-family: "Oddlini";
   font-weight: normal;
   font-style: normal;
@@ -184,16 +216,16 @@ li {
   padding-block: 1rem;
   color: #ffffff;
 }
-.banner-section .container .row .col-md-5 .banner-text .paragraph {
+.banner-section .banner-container .banner-text .paragraph {
   display: flex;
   align-items: center;
 }
-.banner-section .container .row .col-md-5 .banner-text .paragraph .vl {
+.banner-section .banner-container .banner-text .paragraph .vl {
   width: 2px;
   height: 60px;
   background-color: #ffffff;
 }
-.banner-section .container .row .col-md-5 .banner-text .paragraph p {
+.banner-section .banner-container .banner-text .paragraph p {
   font-family: "Fira Sans" sans-serif;
   font-weight: 300;
   font-size: 1.375rem;
@@ -203,18 +235,18 @@ li {
   padding-left: 1.2rem;
   padding-top: 1rem;
 }
-.banner-section .container .row .col-md-5 .banner-text .social-media ul {
+.banner-section .banner-container .banner-text .social-media ul {
   list-style: none;
   display: flex;
   padding: 0;
 }
-.banner-section .container .row .col-md-5 .banner-text .social-media ul li {
+.banner-section .banner-container .banner-text .social-media ul li {
   padding-right: 0.5rem;
 }
-.banner-section .container .row .col-md-5 .banner-text .social-media ul li:last-child {
+.banner-section .banner-container .banner-text .social-media ul li:last-child {
   padding-right: 0;
 }
-.banner-section .container .row .col-md-5 .banner-text .social-media i {
+.banner-section .banner-container .banner-text .social-media i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -228,14 +260,14 @@ li {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.banner-section .container .row .col-md-5 .banner-text .social-media i:hover {
+.banner-section .banner-container .banner-text .social-media i:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #d317b8;
 }
-.banner-section .container .row .col-md-7 .banner-img {
+.banner-section .banner-container .banner-img {
   position: relative;
 }
-.banner-section .container .row .col-md-7 .banner-img .img-background {
+.banner-section .banner-container .banner-img .img-background {
   width: 600px;
   height: 600px;
   background: linear-gradient(120deg, #6c90e8, #d317b8);
@@ -249,7 +281,7 @@ li {
   justify-content: center;
   overflow: hidden;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-img-border {
+.banner-section .banner-container .banner-img .banner-img-border {
   width: 650px;
   height: 650px;
   border: 3px solid #d317b8;
@@ -264,7 +296,7 @@ li {
   justify-content: center;
   overflow: hidden;
 }
-.banner-section .container .row .col-md-7 .banner-img .my-images {
+.banner-section .banner-container .banner-img .my-images {
   position: absolute;
   width: 50%;
   height: auto;
@@ -273,7 +305,7 @@ li {
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon {
+.banner-section .banner-container .banner-img .banner-icon {
   position: absolute;
   margin-top: 50%;
   margin-left: 50%;
@@ -283,7 +315,7 @@ li {
   width: 530px;
   height: 530px;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-behance-icon {
+.banner-section .banner-container .banner-img .banner-icon .banner-behance-icon {
   position: absolute;
   top: 180px;
   left: 0px;
@@ -292,11 +324,11 @@ li {
   transform: rotate(0deg);
   animation: rotate 10s infinite;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-behance-icon:hover {
+.banner-section .banner-container .banner-img .banner-icon .banner-behance-icon:hover {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-dribble-icon {
+.banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
   position: absolute;
   top: 180px;
   right: 0px;
@@ -304,11 +336,11 @@ li {
   transition: all 0.5s ease;
   animation: rotate 10s infinite;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-dribble-icon:hover {
+.banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon:hover {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-github-icon {
+.banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
   position: absolute;
   top: 540px;
   right: -60px;
@@ -316,7 +348,7 @@ li {
   transition: all 0.5s ease;
   animation: rotate 10s infinite;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .banner-github-icon:hover {
+.banner-section .banner-container .banner-img .banner-icon .banner-github-icon:hover {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
 }
@@ -328,10 +360,10 @@ li {
     transform: rotate(380deg);
   }
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .my-cv {
+.banner-section .banner-container .banner-img .banner-icon .my-cv {
   position: absolute;
-  top: 450px;
-  left: -100px;
+  top: 500px;
+  left: -85px;
   line-height: 12px;
   background-color: #d317b8;
   width: 80px;
@@ -345,9 +377,9 @@ li {
   font-weight: 600;
   padding: 10px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .my-cv::after, .banner-section .container .row .col-md-7 .banner-img .banner-icon .my-cv ::before {
+.banner-section .banner-container .banner-img .banner-icon .my-cv::after, .banner-section .banner-container .banner-img .banner-icon .my-cv::before {
   content: "";
   position: absolute;
   top: 0;
@@ -356,14 +388,17 @@ li {
   height: 100%;
   background: #d317b8;
   border-radius: 50%;
-  z-index: 1;
-  opacity: 0.7;
+  opacity: 0.9;
+  z-index: 2;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .my-cv::before {
+.banner-section .banner-container .banner-img .banner-icon .my-cv::before {
   animation: pluse 2s ease-out infinite;
 }
-.banner-section .container .row .col-md-7 .banner-img .banner-icon .my-cv::after {
+.banner-section .banner-container .banner-img .banner-icon .my-cv::after {
   animation: pluse 2s 1s ease-out infinite;
+}
+.banner-section .banner-container .banner-img .banner-icon .my-cv i, .banner-section .banner-container .banner-img .banner-icon .my-cv span {
+  z-index: 3;
 }
 @keyframes pluse {
   100% {
@@ -375,7 +410,7 @@ li {
 .about-section {
   padding-block: 8rem;
 }
-.about-section .container .row .col-md-6 .about-text .heding {
+.about-section .about-container .about-text .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -384,7 +419,7 @@ li {
   color: #ffffff;
   text-transform: capitalize;
 }
-.about-section .container .row .col-md-6 .about-text .paragraph {
+.about-section .about-container .about-text .paragraph {
   font-family: "Fira Sans" sans-serif;
   font-weight: 300;
   font-size: 1.375rem;
@@ -394,7 +429,7 @@ li {
   line-height: 160%;
   padding-bottom: 2rem;
 }
-.about-section .container .row .col-md-6 .about-text .my-btn {
+.about-section .about-container .about-text .my-btn {
   padding: 10px 40px;
   cursor: pointer;
   color: #ffffff;
@@ -409,13 +444,13 @@ li {
   border: 1px solid #d317b8;
   transition: 0.5s linear;
 }
-.about-section .container .row .col-md-6 .about-text .my-btn:hover {
+.about-section .about-container .about-text .my-btn:hover {
   background: transparent;
   color: #ffffff;
   box-shadow: 0 0 20px #d317b8;
 }
 
-.my-skils .container .heding {
+.my-skils .skils-container .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -426,11 +461,11 @@ li {
   display: grid;
   place-items: center;
 }
-.my-skils .container .col-md-6 .skill-box {
+.my-skils .skils-container .skill-box {
   width: 100%;
   margin: 20px 0px;
 }
-.my-skils .container .col-md-6 .title {
+.my-skils .skils-container .title {
   display: block;
   font-family: "Fira Sans";
   font-weight: bold;
@@ -439,14 +474,14 @@ li {
   font-size: 1.5rem;
   color: #ffffff;
 }
-.my-skils .container .col-md-6 .skill-bar {
+.my-skils .skils-container .skill-bar {
   width: 100%;
   height: 12px;
   border-radius: 20px;
   margin-top: 6px;
   background: #380856;
 }
-.my-skils .container .col-md-6 .skill-bar .skill-per {
+.my-skils .skils-container .skill-bar .skill-per {
   position: relative;
   display: block;
   height: 100%;
@@ -456,43 +491,43 @@ li {
   animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
 }
-.my-skils .container .col-md-6 .skill-bar .html {
+.my-skils .skils-container .skill-bar .html {
   width: 90%;
   animation-delay: 0.1s;
 }
-.my-skils .container .col-md-6 .skill-bar .css {
+.my-skils .skils-container .skill-bar .css {
   width: 80%;
   animation-delay: 0.2s;
 }
-.my-skils .container .col-md-6 .skill-bar .scss {
+.my-skils .skils-container .skill-bar .scss {
   width: 78%;
   animation-delay: 0.3s;
 }
-.my-skils .container .col-md-6 .skill-bar .bootstrap {
+.my-skils .skils-container .skill-bar .bootstrap {
   width: 85%;
   animation-delay: 0.4s;
 }
-.my-skils .container .col-md-6 .skill-bar .javascript {
+.my-skils .skils-container .skill-bar .javascript {
   width: 60%;
   animation-delay: 0.5s;
 }
-.my-skils .container .col-md-6 .skill-bar .react {
+.my-skils .skils-container .skill-bar .react {
   width: 75%;
   animation-delay: 0.1s;
 }
-.my-skils .container .col-md-6 .skill-bar .jquery {
+.my-skils .skils-container .skill-bar .jquery {
   width: 70%;
   animation-delay: 0.2s;
 }
-.my-skils .container .col-md-6 .skill-bar .github {
+.my-skils .skils-container .skill-bar .github {
   width: 82%;
   animation-delay: 0.3s;
 }
-.my-skils .container .col-md-6 .skill-bar .Photoshop {
+.my-skils .skils-container .skill-bar .Photoshop {
   width: 95%;
   animation-delay: 0.4s;
 }
-.my-skils .container .col-md-6 .skill-bar .figma {
+.my-skils .skils-container .skill-bar .figma {
   width: 92%;
   animation-delay: 0.5s;
 }
@@ -505,20 +540,21 @@ li {
     opacity: 1;
   }
 }
-.my-skils .container .col-md-6 .skill-bar .tooltip {
+.my-skils .skils-container .skill-bar .tooltip {
   position: absolute;
-  right: 14px;
-  top: 32px;
+  right: -5px;
+  top: -30px;
   font-family: "fira sans";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  font-weight: 800;
   color: #fff;
   padding: 2px 6px;
   border-radius: 3px;
-  background-color: #6e0dd0;
+  opacity: 1;
 }
 
-.what-i-do .container .heding {
+.what-i-do .what-i-do-container .heding {
   display: grid;
   place-items: center;
   font-size: calc(3rem + 1.5vw);
@@ -529,7 +565,7 @@ li {
   color: #ffffff;
   text-transform: capitalize;
 }
-.what-i-do .container .row .col-md-4 .card {
+.what-i-do .what-i-do-container .card {
   margin-top: 1rem;
   background: #1c0818;
   display: grid;
@@ -540,10 +576,10 @@ li {
   transition: all 0.5s ease;
   cursor: pointer;
 }
-.what-i-do .container .row .col-md-4 .card:hover {
+.what-i-do .what-i-do-container .card:hover {
   box-shadow: 0 0 20px #d317b8;
 }
-.what-i-do .container .row .col-md-4 .card-heding {
+.what-i-do .what-i-do-container .card-heding {
   font-family: "Fira Sans";
   color: #ffffff;
   font-weight: 900;
@@ -551,7 +587,7 @@ li {
   text-transform: capitalize;
   padding-block: 1.5rem;
 }
-.what-i-do .container .row .col-md-4 .card-text {
+.what-i-do .what-i-do-container .card-text {
   font-family: "Fira Sans";
   color: #ffffff;
   font-weight: 100;
@@ -561,7 +597,7 @@ li {
 .project-section {
   padding-block: 8rem;
 }
-.project-section .container .heding {
+.project-section .Project-container .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -573,66 +609,66 @@ li {
   align-items: center;
   justify-content: center;
 }
-.project-section .container .row .col-md-6 .project {
+.project-section .Project-container .project {
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   transition: all 0.5s ease;
 }
-.project-section .container .row .col-md-6 .project:hover {
+.project-section .Project-container .project:hover {
   box-shadow: 0 0 20px #380856;
 }
-.project-section .container .row .col-md-6 .project-1 {
+.project-section .Project-container .project-1 {
   background-color: #380856;
   padding: 20px;
 }
-.project-section .container .row .col-md-6 .project-1:hover {
+.project-section .Project-container .project-1:hover {
   box-shadow: 0 0 20px #380856;
 }
-.project-section .container .row .col-md-6 .project-2 {
+.project-section .Project-container .project-2 {
   background-color: #387cdf;
 }
-.project-section .container .row .col-md-6 .project-2:hover {
+.project-section .Project-container .project-2:hover {
   box-shadow: 0 0 20px #387cdf;
 }
-.project-section .container .row .col-md-6 .project-3 {
+.project-section .Project-container .project-3 {
   background-color: #58006b;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
-.project-section .container .row .col-md-6 .project-3:hover {
+.project-section .Project-container .project-3:hover {
   box-shadow: 0 0 20px #58006b;
 }
-.project-section .container .row .col-md-6 .project-4 {
+.project-section .Project-container .project-4 {
   background-color: #380856;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
-.project-section .container .row .col-md-6 .project-4:hover {
+.project-section .Project-container .project-4:hover {
   box-shadow: 0 0 20px #380856;
 }
-.project-section .container .row .col-md-6 .project-titel {
+.project-section .Project-container .project-titel {
   padding-block: 2rem;
 }
-.project-section .container .row .col-md-6 .project-titel .project-heding {
+.project-section .Project-container .project-titel .project-heding {
   font-family: "fira sans";
   font-weight: bold;
   color: #ffffff;
   text-transform: capitalize;
   font-size: calc(1.375rem + 1.5vw);
 }
-.project-section .container .row .col-md-6 .project-titel .project-date {
+.project-section .Project-container .project-titel .project-date {
   font-family: "fira sans";
   font-weight: 100;
   color: #ffffff;
   font-size: calc(0.875rem + 1.5vw);
 }
-.project-section .container .row .col-md-6 .title-right {
+.project-section .Project-container .title-right {
   text-align: right;
 }
-.project-section .container .git-link {
+.project-section .Project-container .git-link {
   font-family: "fira sans";
   font-weight: bold;
   font-size: 2rem;
@@ -640,14 +676,17 @@ li {
   text-decoration: none;
   display: grid;
   place-items: center;
-  padding-top: 4rem;
+  padding-top: 7rem;
   transition: all 0.5s ease;
 }
-.project-section .container .git-link:hover {
+.project-section .Project-container .git-link:hover {
   text-shadow: 0 0 20px #d317b8;
 }
 
-.contact-me .container .row .col-md-6 .contact-text .heding {
+.contact-me {
+  padding-top: 6rem;
+}
+.contact-me .contact-me-container .contact-text .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -656,22 +695,22 @@ li {
   color: #ffffff;
   text-transform: capitalize;
 }
-.contact-me .container .row .col-md-6 .contact-text .pragraph {
+.contact-me .contact-me-container .contact-text .pragraph {
   color: #ffffff;
   font-family: "fira sans";
   font-size: 2rem;
   font-weight: 600;
 }
-.contact-me .container .row .col-md-6 .contact-info {
+.contact-me .contact-me-container .contact-info {
   padding-block: 3.5rem;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button {
+.contact-me .contact-me-container .contact-info .touch-button {
   padding-top: 20px;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a {
+.contact-me .contact-me-container .contact-info .touch-button a {
   text-decoration: none;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button {
+.contact-me .contact-me-container .contact-info .touch-button a button {
   background: #2f0d29;
   outline: transparent;
   border: 0;
@@ -684,46 +723,46 @@ li {
   transition: all 0.5s ease;
   border: 1px solid transparent;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button:hover {
+.contact-me .contact-me-container .contact-info .touch-button a button:hover {
   box-shadow: 0 0 10px #d317b8;
   border: 1px solid #d317b8;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button .mail, .contact-me .container .row .col-md-6 .contact-info .touch-button a button .call {
+.contact-me .contact-me-container .contact-info .touch-button a button .mail, .contact-me .contact-me-container .contact-info .touch-button a button .call {
   padding: 6px 10px;
   border-radius: 6px;
   background: #000000;
   font-size: 1.5rem;
   color: #ffffff;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button .get-touch {
+.contact-me .contact-me-container .contact-info .touch-button a button .get-touch {
   width: 100%;
   margin-inline: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button .email, .contact-me .container .row .col-md-6 .contact-info .touch-button a button .phone {
+.contact-me .contact-me-container .contact-info .touch-button a button .email, .contact-me .contact-me-container .contact-info .touch-button a button .phone {
   font-size: 1.275rem;
   color: #ffffff;
   font-family: "fira sans";
   font-weight: 600;
 }
-.contact-me .container .row .col-md-6 .contact-info .touch-button a button .fa-arrow-right {
+.contact-me .contact-me-container .contact-info .touch-button a button .fa-arrow-right {
   font-size: 1.5rem;
   color: #ffffff;
 }
-.contact-me .container .row .col-md-6 .social-media ul {
+.contact-me .contact-me-container .social-media ul {
   list-style: none;
   display: flex;
   padding: 0;
 }
-.contact-me .container .row .col-md-6 .social-media ul li {
+.contact-me .contact-me-container .social-media ul li {
   padding-right: 0.5rem;
 }
-.contact-me .container .row .col-md-6 .social-media ul li:last-child {
+.contact-me .contact-me-container .social-media ul li:last-child {
   padding-right: 0;
 }
-.contact-me .container .row .col-md-6 .social-media i {
+.contact-me .contact-me-container .social-media i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -737,29 +776,29 @@ li {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.contact-me .container .row .col-md-6 .social-media i:hover {
+.contact-me .contact-me-container .social-media i:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #d317b8;
 }
-.contact-me .container .row .col-md-6 .send-massege {
+.contact-me .contact-me-container .send-massege {
   width: 100%;
   background: linear-gradient(90deg, #230c18, #000000);
   border-radius: 10px;
   padding: 20px 40px;
 }
-.contact-me .container .row .col-md-6 .send-massege .heding {
+.contact-me .contact-me-container .send-massege .heding {
   font-family: "fira sans";
   font-size: 2rem;
   font-weight: bold;
   color: #d317b8;
   padding-bottom: 10px;
 }
-.contact-me .container .row .col-md-6 .send-massege form .input-row {
+.contact-me .contact-me-container .send-massege form .input-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.contact-me .container .row .col-md-6 .send-massege form .input-box input, .contact-me .container .row .col-md-6 .send-massege form textarea {
+.contact-me .contact-me-container .send-massege form .input-box input, .contact-me .contact-me-container .send-massege form textarea {
   width: 100%;
   padding-block: 10px;
   padding-left: 20px;
@@ -775,12 +814,12 @@ li {
   border: 1px solid transparent;
   transition: all 0.5s ease;
 }
-.contact-me .container .row .col-md-6 .send-massege form input:hover, .contact-me .container .row .col-md-6 .send-massege form textarea:hover {
+.contact-me .contact-me-container .send-massege form input:hover, .contact-me .contact-me-container .send-massege form textarea:hover {
   border: 1px solid #d317b8;
   box-shadow: 0 0 10px #d317b8;
   background: transparent;
 }
-.contact-me .container .row .col-md-6 .send-massege form .my-button button {
+.contact-me .contact-me-container .send-massege form .my-button button {
   width: 100%;
   padding: 6px;
   font-family: "fira sans";
@@ -793,10 +832,10 @@ li {
   border-radius: 50px;
   transition: all 0.5s ease;
 }
-.contact-me .container .row .col-md-6 .send-massege form .my-button button i {
+.contact-me .contact-me-container .send-massege form .my-button button i {
   padding-left: 1rem;
 }
-.contact-me .container .row .col-md-6 .send-massege form .my-button button:hover {
+.contact-me .contact-me-container .send-massege form .my-button button:hover {
   background: transparent;
   box-shadow: 0 0 20px #d317b8;
 }
@@ -804,7 +843,7 @@ li {
 .follow-me {
   padding-block: 5rem;
 }
-.follow-me .container .row .col-md-6 .heding {
+.follow-me .follow-me-container .heding {
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -813,20 +852,20 @@ li {
   color: #ffffff;
   text-transform: capitalize;
 }
-.follow-me .container .row .col-md-6 .folow-icon {
+.follow-me .follow-me-container .folow-icon {
   display: grid;
   place-items: center;
 }
-.follow-me .container .row .col-md-6 .folow-icon ul {
+.follow-me .follow-me-container .folow-icon ul {
   list-style: none;
   display: flex;
   padding: 0;
   gap: 4rem;
 }
-.follow-me .container .row .col-md-6 .folow-icon ul li {
+.follow-me .follow-me-container .folow-icon ul li {
   padding-right: 0;
 }
-.follow-me .container .row .col-md-6 .folow-icon ul li i {
+.follow-me .follow-me-container .folow-icon ul li i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -840,7 +879,7 @@ li {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.follow-me .container .row .col-md-6 .folow-icon ul li i:hover {
+.follow-me .follow-me-container .folow-icon ul li i:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #d317b8;
 }
