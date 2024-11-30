@@ -85,6 +85,9 @@ a.back-to-top {
                 font-family: 'Oddlini';
                 color: $body-white;
                 font-size: 1.5rem;
+                @include mobile-only{
+                    font-size: .5rem;
+                }
             }
             .nav-menu{
                 .nav-link{
@@ -157,7 +160,7 @@ a.back-to-top {
             }
             .toogle{
                 display: none;
-                font-size: 2rem;
+                font-size: 1.675rem;
                 color: $body-white;
                 padding-right: 1rem;
             }
@@ -187,9 +190,18 @@ a.back-to-top {
     position: relative;
     top: 0;
     overflow: hidden;
+    @include mobile-only{
+        height: 120vh;
+    }
     .banner-container{
+        @include mobile-only{
+            padding-inline: 1rem;
+        }
         .banner-text{
             margin-top: 20%;
+            @include mobile-only{
+                padding-top:5%;
+            }
             .banner-top-heding{
                 font-family: 'Fira Sans';
                 font-weight: 100;
@@ -197,6 +209,9 @@ a.back-to-top {
                 font-display: swap;
                 color: $body-white-secondary;
                 font-size: 3rem;
+                @include mobile-only{
+                    font-size: 1.575rem;
+                }
             }
             .banner-heding{
                 font-family: 'Oddlini';
@@ -207,6 +222,10 @@ a.back-to-top {
                 line-height: 1.0;
                 padding-block: 1rem;
                 color: $body-white;
+                @include mobile-only{
+                    font-size: 4rem;
+                    padding-block: .5rem;
+                }
             }
             .paragraph{
                 display: flex;
@@ -215,11 +234,17 @@ a.back-to-top {
                     width: 2px;
                     height: 60px;
                     background-color: $body-white;
+                    @include mobile-only{
+                        height: 40px
+                    }
                 }
                 p{
                     @include paragraph();
                     padding-left: 1.2rem;
                     padding-top:1rem;
+                    @include mobile-only{
+                        font-size: 1rem;
+                    }
                 }
             }
             .social-media ul {
@@ -266,7 +291,11 @@ a.back-to-top {
                 transform: translate(-50%, -50%);
                 display: flex;
                 justify-content: center;
-                overflow: hidden;                        
+                overflow: hidden;
+                @include mobile-only{
+                    width: 250px;
+                    height: 250px;
+                }                        
             }
             .banner-img-border {
                 width:650px;
@@ -282,6 +311,10 @@ a.back-to-top {
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
+                @include mobile-only{
+                    width: 300px;
+                    height: 300px;
+                }
             }
             .my-images{
                 position: absolute;
@@ -312,10 +345,20 @@ a.back-to-top {
                     transition: all .50s ease;
                     transform: rotate(0deg);
                     animation: rotate 10s infinite;
+                    @include mobile-only{
+                        top: 300px;
+                        left: 150px;
+                    }
+                    img{
+                        @include mobile-only{
+                            width: 40px;
+                        }
+                    }
                     &:hover{
                         box-shadow: 0 0 20px $primary-color;
                         transform: scale(1.1);
                     }
+
                     
                 }
                 .banner-dribble-icon {
@@ -933,8 +976,7 @@ a.back-to-top {
 //===============================brekpoint=============
 // === Breakpoint Variables ===
 @media (max-width: 768px) {
-    //==========================nav bar========================
-    
+    //==========================nav bar========================    
     .nav-section{
         .container{
             --bs-gutter-x: 0;
@@ -942,11 +984,11 @@ a.back-to-top {
                 border-radius: 0;
                 top: 0;
                 .brand-name{
-                    font-size: 1.375rem;
+                    font-size: 1.275rem;
                 }
                 .toogle{
                     display: block;
-                    padding-right: 1.5rem;
+                    padding-right: 1rem;
                 }
                 .nav-menu{
                     position: absolute;
@@ -993,84 +1035,4 @@ a.back-to-top {
         }
 
     }
-
-
-
-    //===============================baner=======================
-    .banner-section{
-        .container{
-            .row{
-                .col-12{
-                    .banner-text{
-                        .banner-top-heding{
-                            font-size: 2rem;
-                        }
-                        .banner-heding{
-                            font-size: 6rem ;
-
-                        }
-                        .pragraph{
-
-                        }
-                        .social-media{
-
-                        }
-                    }
-                }
-                .col-12{
-                    .banner-img{
-                        .img-background{
-                            width: 350px;
-                            height: 350px;
-                        }
-                        .banner-img-border{
-                            width: 390px;
-                            height: 390px;
-
-                        }
-                        .my-images{
-
-                        }
-                        .banner-icon{
-                            .banner-behance-icon{
-                                top: 280px;
-                                left: 100px;
-                            }
-                            .banner-dribble-icon{
-                                top: 280px;
-                                right: 100px;
-                            }
-                            .banner-github-icon{
-                                top: 380px;
-                                right: 58px;
-                            }
-                            .my-cv{
-                                top: 350px;
-                                left: 50px;
-                            }
-
-                        }
-
-                    }
-
-                }
-            }
-        }
-    }
-
-
-    // .banner-section {
-    //     height: 85vh;
-    // }
-    // .banner-section .container .row .col-lg-5 .banner-text .banner-top-heding {
-    //     font-size: 2rem ;
-    // }
-    // .banner-section .container .row .col-lg-5 .banner-text .banner-heding{
-    //     font-size: 5rem;
-    // }
-    
-    // .banner-section .container .row .col-lg-7 .banner-img .img-background {
-    //     width: 450px;
-    //     height: 430px;
-    // }
 }

@@ -16,7 +16,7 @@
     let aboutTop = about.offsetTop;
     console.log()
     window.addEventListener("scroll", function () {
-        if (window.pageYOffset >= aboutTop-10) {
+        if (window.pageYOffset >= aboutTop-100) {
             header.classList.add("is-sticky");
         } else {
             header.classList.remove("is-sticky");
