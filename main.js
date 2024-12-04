@@ -37,6 +37,11 @@
 
 })();
 
+(function(){
+    const pathName = window.location;
+   console.log (pathName);
+})();
+
 
 
 $(document).ready(function () {

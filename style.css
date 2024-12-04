@@ -30,6 +30,7 @@
 
 body {
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 a {
@@ -68,8 +69,6 @@ a.back-to-top {
   right: 20px;
   bottom: 20px;
   background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px;
 }
 
@@ -241,7 +240,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .banner-top-heding {
-    font-size: 1.575rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -261,7 +260,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .banner-heding {
-    font-size: 4rem;
+    font-size: 5rem;
     padding-block: 0.5rem;
   }
 }
@@ -273,11 +272,6 @@ a.back-to-top {
   width: 2px;
   height: 60px;
   background-color: #ffffff;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .banner-section .banner-container .banner-text .paragraph .vl {
-    height: 40px;
-  }
 }
 .banner-section .banner-container .banner-text .paragraph p {
   font-family: "Fira Sans" sans-serif;
@@ -297,7 +291,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .paragraph p {
-    font-size: 1rem;
+    font-size: 1.375rem;
   }
 }
 .banner-section .banner-container .banner-text .social-media ul {
@@ -319,7 +313,8 @@ a.back-to-top {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  backdrop-filter: brightness(88%);
+  -webkit-backdrop-filter: brightness(88%);
+          backdrop-filter: brightness(88%);
   font-size: 20px;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1013,7 +1008,8 @@ a.back-to-top {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  backdrop-filter: brightness(88%);
+  -webkit-backdrop-filter: brightness(88%);
+          backdrop-filter: brightness(88%);
   font-size: 20px;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1127,7 +1123,8 @@ a.back-to-top {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  backdrop-filter: brightness(88%);
+  -webkit-backdrop-filter: brightness(88%);
+          backdrop-filter: brightness(88%);
   font-size: 3rem;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1208,6 +1205,4 @@ a.back-to-top {
   .nav-section .nav-container .navbar .active-nav {
     left: 0;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

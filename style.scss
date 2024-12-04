@@ -7,12 +7,13 @@
 }
 body{
     background-color: $body-black;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
 }
 li{
-    list-style: none;
+    list-style: none;    
 }
 
 .is-sticky {
@@ -210,7 +211,7 @@ a.back-to-top {
                 color: $body-white-secondary;
                 font-size: 3rem;
                 @include mobile-only{
-                    font-size: 1.575rem;
+                    font-size: 2rem;
                 }
                 @include tablet-only{
                     font-size: 2rem;
@@ -226,7 +227,7 @@ a.back-to-top {
                 padding-block: 1rem;
                 color: $body-white;
                 @include mobile-only{
-                    font-size: 4rem;
+                    font-size: 5rem;
                     padding-block: .5rem;
                 }
             }
@@ -237,17 +238,18 @@ a.back-to-top {
                     width: 2px;
                     height: 60px;
                     background-color: $body-white;
-                    @include mobile-only{
-                        height: 40px
-                    }
+                    // @include mobile-only{
+                    //     height: 40px
+                    // }
                 }
                 p{
                     @include paragraph();
                     padding-left: 1.2rem;
                     padding-top:1rem;
                     @include mobile-only{
-                        font-size: 1rem;
+                        font-size: 1.375rem;
                     }
+                    
                 }
             }
             .social-media ul {
