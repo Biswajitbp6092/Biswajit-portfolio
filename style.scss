@@ -217,7 +217,8 @@ a.back-to-top {
                     font-size: 2rem;
                 }
                 @include tablet-only{
-                    font-size: 2rem;
+                    font-size: 1.375rem;
+                    padding-top: 2.5rem;
                 }
             }
             .banner-heding{
@@ -233,6 +234,11 @@ a.back-to-top {
                     font-size: 5rem;
                     padding-block: .5rem;
                 }
+                @include tablet-only{
+                    font-size: 4rem;
+                    padding-top: 1.5rem;
+
+                }
             }
             .paragraph{
                 display: flex;
@@ -244,6 +250,9 @@ a.back-to-top {
                     // @include mobile-only{
                     //     height: 40px
                     // }
+                    @include tablet-only{
+                        height: 40px;
+                    }
                 }
                 p {
                     padding-left: 1.2rem;
@@ -252,6 +261,9 @@ a.back-to-top {
                     @include mobile-only {
                         font-size: 1.375rem;
                     }
+                    @include tablet-only{
+                        font-size: 1rem;
+                    }
                 }
                 
             }
@@ -259,6 +271,9 @@ a.back-to-top {
                 list-style: none;
                 display: flex;
                 padding: 0;
+                @include tablet-only{
+                    padding-top: 1rem;
+                }
             }
             .social-media ul li {
                 padding-right: 0.5rem;
@@ -306,8 +321,8 @@ a.back-to-top {
                     top: 80px;
                 }
                 @include tablet-only{
-                    width: 380px;
-                    height: 360px;
+                    width: 350px;
+                    height: 350px;
                 }                       
             }
             .banner-img-border {
@@ -331,7 +346,7 @@ a.back-to-top {
                 }
                 @include tablet-only{
                     width: 400px;
-                    height: 380px;
+                    height: 400px;
                 }
             }
             .my-images{
@@ -344,6 +359,9 @@ a.back-to-top {
                 transform: translate(-50%, -50%);
                 @include mobile-only{
                     // top: 0;
+                }
+                @include tablet-only{
+                    top: 80px;
                 }
 
             }
@@ -370,6 +388,10 @@ a.back-to-top {
                         top: 220px;
                         left: 150px;
                     }
+                    @include tablet-only{
+                        top: 270px;
+                        left: 100px;
+                    }
                     img{
                         @include mobile-only{
                             width: 40px;
@@ -394,6 +416,10 @@ a.back-to-top {
                         right: 150px;
 
                     }
+                    @include tablet-only{
+                        top: 270px;
+                        right: 80px;
+                    }
                     img{
                         @include mobile-only{
                             width: 40px;
@@ -414,6 +440,10 @@ a.back-to-top {
                     @include mobile-only{
                         top: 370px;
                         right: 110px;
+                    }
+                    @include tablet-only{
+                        top: 450px;
+                        right: 50px;
                     }
                     img{
                         @include mobile-only{
@@ -457,6 +487,13 @@ a.back-to-top {
                         height: 50px;
                         top: 350px;
                         left: 110px;
+                    }
+                    @include tablet-only{
+                        width: 70px;
+                        height: 70px;
+                        top: 430px;
+                        left: 40px;
+
                     }
                     &::after, &::before{
                         content: '';
@@ -509,6 +546,9 @@ a.back-to-top {
 // ==============about section =================
 .about-section{
     padding-block: 8rem;
+    @include tablet-only{
+        padding-block: 4rem;
+    }
     @include mobile-only{
         padding-block: 3rem
     }
@@ -550,6 +590,9 @@ a.back-to-top {
 .my-skils{
     .skils-container{
         padding-top: 4rem;
+        @include tablet-only{
+            padding-top: 2rem;
+        }
         .heding{
             display: grid;
             place-items: center;
@@ -670,43 +713,50 @@ a.back-to-top {
             place-items: center;
             @include heding();
         }
-        .card{
-            margin-top: 1rem;
-            background: $bs-card-color;
-            display: grid;
-            place-items: center;
-            text-align: center;
-            border-radius: 10px;
-            border: 2px solid $primary-color;
-            transition: all .50s ease;
-            cursor: pointer;
-            img{
-                @include mobile-only{
-                    width: 70%;
+        .card-box-group{
+            .card{
+                margin-top: 1rem;
+                background: $bs-card-color;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                border-radius: 10px;
+                border: 2px solid $primary-color;
+                transition: all .50s ease;
+                cursor: pointer;
+                @include tablet-only{
+                    width: 60%;
+                    height: auto;
+                }
+                img{
+                    @include mobile-only{
+                        width: 70%;
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 0 20px $primary-color;
                 }
             }
-            &:hover{
-                box-shadow: 0 0 20px $primary-color;
+            .card-heding{
+                font-family: 'Fira Sans';
+                color: $body-white;
+                font-weight: 900;
+                font-size: 2rem;
+                text-transform: capitalize;
+                padding-block: 1.5rem;
+                @include mobile-only{
+                    font-size: 1.375rem;
+                    padding-block: 1rem;
+    
+                }
             }
-        }
-        .card-heding{
-            font-family: 'Fira Sans';
-            color: $body-white;
-            font-weight: 900;
-            font-size: 2rem;
-            text-transform: capitalize;
-            padding-block: 1.5rem;
-            @include mobile-only{
-                font-size: 1.375rem;
-                padding-block: 1rem;
+            .card-text{
+                font-family: 'Fira Sans';
+                color: $body-white;
+                font-weight: 100;
+                font-size: 1rem;
+            }
 
-            }
-        }
-        .card-text{
-            font-family: 'Fira Sans';
-            color: $body-white;
-            font-weight: 100;
-            font-size: 1rem;
         }
     }
 }
@@ -820,6 +870,9 @@ a.back-to-top {
                 @include mobile-only{
                     font-size: 1rem;
                 }
+                @include tablet-only{
+                    font-size: 1rem;
+                }
             }
         }
         .contact-info{
@@ -845,6 +898,10 @@ a.back-to-top {
                         border: 1px solid transparent;
                         @include mobile-only{
                             width: 100%;
+                        }
+                        @include tablet-only{
+                            width: 100%;
+                            padding: 40px 10px;
                         }
                         &:hover{
                             box-shadow: 0 0 10px $primary-color;
@@ -954,6 +1011,10 @@ a.back-to-top {
                     border: 0;
                     border: 1px solid transparent;
                     transition: all .50s ease; 
+                    @include tablet-only{
+                        font-size: 1.5rem;
+
+                    }
                 }
                 input:hover,textarea:hover{
                     border: 1px solid $primary-color;

@@ -248,7 +248,8 @@ a.back-to-top {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .banner-section .banner-container .banner-text .banner-top-heding {
-    font-size: 2rem;
+    font-size: 1.375rem;
+    padding-top: 2.5rem;
   }
 }
 .banner-section .banner-container .banner-text .banner-heding {
@@ -267,6 +268,12 @@ a.back-to-top {
     padding-block: 0.5rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .banner-heding {
+    font-size: 4rem;
+    padding-top: 1.5rem;
+  }
+}
 .banner-section .banner-container .banner-text .paragraph {
   display: flex;
   align-items: center;
@@ -275,6 +282,11 @@ a.back-to-top {
   width: 2px;
   height: 60px;
   background-color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .paragraph .vl {
+    height: 40px;
+  }
 }
 .banner-section .banner-container .banner-text .paragraph p {
   padding-left: 1.2rem;
@@ -292,15 +304,30 @@ a.back-to-top {
     padding-top: 1rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .paragraph p {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .paragraph p {
     font-size: 1.375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .paragraph p {
+    font-size: 1rem;
   }
 }
 .banner-section .banner-container .banner-text .social-media ul {
   list-style: none;
   display: flex;
   padding: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-text .social-media ul {
+    padding-top: 1rem;
+  }
 }
 .banner-section .banner-container .banner-text .social-media ul li {
   padding-right: 0.5rem;
@@ -352,8 +379,8 @@ a.back-to-top {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .banner-section .banner-container .banner-img .img-background {
-    width: 380px;
-    height: 360px;
+    width: 350px;
+    height: 350px;
   }
 }
 .banner-section .banner-container .banner-img .banner-img-border {
@@ -381,7 +408,7 @@ a.back-to-top {
 @media (min-width: 768px) and (max-width: 1199px) {
   .banner-section .banner-container .banner-img .banner-img-border {
     width: 400px;
-    height: 380px;
+    height: 400px;
   }
 }
 .banner-section .banner-container .banner-img .my-images {
@@ -392,6 +419,11 @@ a.back-to-top {
   margin-top: 50%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .my-images {
+    top: 80px;
+  }
 }
 .banner-section .banner-container .banner-img .banner-icon {
   position: absolute;
@@ -418,6 +450,12 @@ a.back-to-top {
     left: 150px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-behance-icon {
+    top: 270px;
+    left: 100px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-icon .banner-behance-icon img {
     width: 40px;
@@ -441,6 +479,12 @@ a.back-to-top {
     right: 150px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
+    top: 270px;
+    right: 80px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon img {
     width: 40px;
@@ -462,6 +506,12 @@ a.back-to-top {
   .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
     top: 370px;
     right: 110px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
+    top: 450px;
+    right: 50px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -508,6 +558,14 @@ a.back-to-top {
     left: 110px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-section .banner-container .banner-img .banner-icon .my-cv {
+    width: 70px;
+    height: 70px;
+    top: 430px;
+    left: 40px;
+  }
+}
 .banner-section .banner-container .banner-img .banner-icon .my-cv::after, .banner-section .banner-container .banner-img .banner-icon .my-cv::before {
   content: "";
   position: absolute;
@@ -541,6 +599,11 @@ a.back-to-top {
 .about-section {
   padding-block: 8rem;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-section {
+    padding-block: 4rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .about-section {
     padding-block: 3rem;
@@ -561,6 +624,11 @@ a.back-to-top {
     padding-top: 1rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-section .about-container .about-text .heding {
+    font-size: 2rem;
+  }
+}
 .about-section .about-container .about-text .paragraph {
   line-height: 160%;
   padding-bottom: 2rem;
@@ -575,6 +643,11 @@ a.back-to-top {
   .about-section .about-container .about-text .paragraph {
     font-size: 1rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-section .about-container .about-text .paragraph {
+    font-size: 1rem;
   }
 }
 .about-section .about-container .about-text .my-btn {
@@ -601,6 +674,11 @@ a.back-to-top {
 .my-skils .skils-container {
   padding-top: 4rem;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .my-skils .skils-container {
+    padding-top: 2rem;
+  }
+}
 .my-skils .skils-container .heding {
   display: grid;
   place-items: center;
@@ -616,6 +694,11 @@ a.back-to-top {
   .my-skils .skils-container .heding {
     font-size: 2rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .my-skils .skils-container .heding {
+    font-size: 2rem;
   }
 }
 .my-skils .skils-container .skill-box {
@@ -737,7 +820,12 @@ a.back-to-top {
     padding-top: 1rem;
   }
 }
-.what-i-do .what-i-do-container .card {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .what-i-do .what-i-do-container .heding {
+    font-size: 2rem;
+  }
+}
+.what-i-do .what-i-do-container .card-box-group .card {
   margin-top: 1rem;
   background: #1c0818;
   display: grid;
@@ -748,15 +836,21 @@ a.back-to-top {
   transition: all 0.5s ease;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .what-i-do .what-i-do-container .card-box-group .card {
+    width: 60%;
+    height: auto;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
-  .what-i-do .what-i-do-container .card img {
+  .what-i-do .what-i-do-container .card-box-group .card img {
     width: 70%;
   }
 }
-.what-i-do .what-i-do-container .card:hover {
+.what-i-do .what-i-do-container .card-box-group .card:hover {
   box-shadow: 0 0 20px #d317b8;
 }
-.what-i-do .what-i-do-container .card-heding {
+.what-i-do .what-i-do-container .card-box-group .card-heding {
   font-family: "Fira Sans";
   color: #ffffff;
   font-weight: 900;
@@ -765,12 +859,12 @@ a.back-to-top {
   padding-block: 1.5rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .what-i-do .what-i-do-container .card-heding {
+  .what-i-do .what-i-do-container .card-box-group .card-heding {
     font-size: 1.375rem;
     padding-block: 1rem;
   }
 }
-.what-i-do .what-i-do-container .card-text {
+.what-i-do .what-i-do-container .card-box-group .card-text {
   font-family: "Fira Sans";
   color: #ffffff;
   font-weight: 100;
@@ -801,6 +895,11 @@ a.back-to-top {
   .project-section .Project-container .heding {
     font-size: 2rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .project-section .Project-container .heding {
+    font-size: 2rem;
   }
 }
 .project-section .Project-container .project {
@@ -900,6 +999,11 @@ a.back-to-top {
     padding-top: 1rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-me .contact-me-container .contact-text .heding {
+    font-size: 2rem;
+  }
+}
 .contact-me .contact-me-container .contact-text .pragraph {
   color: #ffffff;
   font-family: "fira sans";
@@ -907,6 +1011,11 @@ a.back-to-top {
   font-weight: 600;
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .contact-me .contact-me-container .contact-text .pragraph {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
   .contact-me .contact-me-container .contact-text .pragraph {
     font-size: 1rem;
   }
@@ -941,6 +1050,12 @@ a.back-to-top {
 @media (min-width: 320px) and (max-width: 767px) {
   .contact-me .contact-me-container .contact-info .touch-button a button {
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-me .contact-me-container .contact-info .touch-button a button {
+    width: 100%;
+    padding: 40px 10px;
   }
 }
 .contact-me .contact-me-container .contact-info .touch-button a button:hover {
@@ -1054,6 +1169,11 @@ a.back-to-top {
   border: 1px solid transparent;
   transition: all 0.5s ease;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-me .contact-me-container .send-massege form .input-box input, .contact-me .contact-me-container .send-massege form textarea {
+    font-size: 1.5rem;
+  }
+}
 .contact-me .contact-me-container .send-massege form input:hover, .contact-me .contact-me-container .send-massege form textarea:hover {
   border: 1px solid #d317b8;
   box-shadow: 0 0 10px #d317b8;
@@ -1101,6 +1221,11 @@ a.back-to-top {
   .follow-me .follow-me-container .heding {
     font-size: 2rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .follow-me .follow-me-container .heding {
+    font-size: 2rem;
   }
 }
 .follow-me .follow-me-container .folow-icon {

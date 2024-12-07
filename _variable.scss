@@ -65,6 +65,9 @@ $bs-project-color-4:#380856;
         font-size: 2rem;
         padding-top: 1rem;
     }
+    @include tablet-only{
+        font-size:2rem;
+    }
 }
 @mixin paragraph{
     font-family: 'Fira Sans' sans-serif;
@@ -76,6 +79,9 @@ $bs-project-color-4:#380856;
     @include mobile-only{
         font-size:1rem;
         padding-top: 1rem;
+    }
+    @include tablet-only{
+        font-size:1rem;
     }
 }
 @mixin my-btn{

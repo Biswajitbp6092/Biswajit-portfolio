@@ -38,11 +38,11 @@ function dynamicBannerHeight() {
     const bannerImg = document.querySelector('.my-images');
     const bannerImgWrapper = document.querySelector('.banner-img');
 
-    // Check if elements exist to avoid errors
-    if (!bannerImg || !bannerImgWrapper) {
-        console.error('Required elements are missing!');
-        return;
-    }
+    // // Check if elements exist to avoid errors
+    // if (!bannerImg || !bannerImgWrapper) {
+    //     console.error('Required elements are missing!');
+    //     return;
+    // }
 
     if (window.innerWidth < 1500) {
         // Get the image's height
