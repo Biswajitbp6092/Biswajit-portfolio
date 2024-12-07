@@ -186,17 +186,15 @@ a.back-to-top {
 // ==============banner section =================
 .banner-section{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(120deg,$body-black, $body-black, $primary-color-2,$primary-color);
     position: relative;
     top: 0;
     overflow: hidden;
-    @include mobile-only{
-        height: 118vh;
-    }
     .banner-container{
         @include mobile-only{
             padding-inline: 1rem;
+            
         }
         .banner-text{
             margin-top: 20%;
@@ -242,15 +240,15 @@ a.back-to-top {
                     //     height: 40px
                     // }
                 }
-                p{
-                    @include paragraph();
+                p {
                     padding-left: 1.2rem;
-                    padding-top:1rem;
-                    @include mobile-only{
+                    padding-top: 1rem;
+                    @include paragraph();
+                    @include mobile-only {
                         font-size: 1.375rem;
                     }
-                    
                 }
+                
             }
             .social-media ul {
                 list-style: none;
@@ -518,9 +516,9 @@ a.back-to-top {
                 @include heding();
             }
             .paragraph{
-                @include paragraph();
                 line-height: 160%;
-                padding-bottom: 2rem
+                padding-bottom: 2rem;
+                @include paragraph();
             }
             .my-btn{
                 @include my-btn();
@@ -548,9 +546,9 @@ a.back-to-top {
     .skils-container{
         padding-top: 4rem;
         .heding{
-            @include heding();
             display: grid;
             place-items: center;
+            @include heding();
         }
         .skill-box{
             width: 100%;
@@ -719,10 +717,10 @@ a.back-to-top {
     }
     .Project-container{
         .heding{
-            @include heding();
             display: flex;
             align-items: center;
             justify-content: center;
+            @include heding();
         }
         .project{
             border-radius: 10px;

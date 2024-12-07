@@ -33,14 +33,24 @@
     });
 })();
 
-(function(){
+function dynamicBannerHeight(){
+    if(window.innerWidth < 1182){
+        console.log('hi');
+        // select elements
+        const bannerImg = document.querySelector('.my-images');
+        const bannerImgWrapper = document.querySelector('.banner-img');
+        // get image's height
+        const bannerImgHeight = bannerImg.clientHeight;
+        // Apply that to banner's height
+        // console.log(bannerImgWrapper.outerHeight);
+        bannerImgWrapper.outerHeight = `${bannerImgHeight}px`;
+        // console.log(bannerImgWrapper.outerHeight);
+        bannerImgWrapper.style.height = `${bannerImgHeight}px`;
+    }
+}
 
-})();
-
-(function(){
-    const pathName = window.location;
-   console.log (pathName);
-})();
+window.addEventListener('DOMContentLoaded', dynamicBannerHeight);
+window.addEventListener('resize', dynamicBannerHeight);
 
 
 

@@ -208,16 +208,11 @@ a.back-to-top {
 }
 .banner-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(120deg, #000000, #000000, #1e0993, #d317b8);
   position: relative;
   top: 0;
   overflow: hidden;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .banner-section {
-    height: 118vh;
-  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container {
@@ -276,14 +271,14 @@ a.back-to-top {
   background-color: #ffffff;
 }
 .banner-section .banner-container .banner-text .paragraph p {
+  padding-left: 1.2rem;
+  padding-top: 1rem;
   font-family: "Fira Sans" sans-serif;
   font-weight: 300;
   font-size: 1.375rem;
   font-style: normal;
   font-display: swap;
   color: #ffffff;
-  padding-left: 1.2rem;
-  padding-top: 1rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-text .paragraph p {
@@ -561,14 +556,14 @@ a.back-to-top {
   }
 }
 .about-section .about-container .about-text .paragraph {
+  line-height: 160%;
+  padding-bottom: 2rem;
   font-family: "Fira Sans" sans-serif;
   font-weight: 300;
   font-size: 1.375rem;
   font-style: normal;
   font-display: swap;
   color: #ffffff;
-  line-height: 160%;
-  padding-bottom: 2rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .about-section .about-container .about-text .paragraph {
@@ -601,6 +596,8 @@ a.back-to-top {
   padding-top: 4rem;
 }
 .my-skils .skils-container .heding {
+  display: grid;
+  place-items: center;
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -608,8 +605,6 @@ a.back-to-top {
   font-display: swap;
   color: #ffffff;
   text-transform: capitalize;
-  display: grid;
-  place-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .my-skils .skils-container .heding {
@@ -785,6 +780,9 @@ a.back-to-top {
   }
 }
 .project-section .Project-container .heding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: calc(3rem + 1.5vw);
   font-family: "Oddlini" sans-serif;
   font-weight: 600;
@@ -792,9 +790,6 @@ a.back-to-top {
   font-display: swap;
   color: #ffffff;
   text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .project-section .Project-container .heding {
