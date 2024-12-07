@@ -33,21 +33,29 @@
     });
 })();
 
-function dynamicBannerHeight(){
-    if(window.innerWidth < 1182){
-        console.log('hi');
-        // select elements
-        const bannerImg = document.querySelector('.my-images');
-        const bannerImgWrapper = document.querySelector('.banner-img');
-        // get image's height
+function dynamicBannerHeight() {
+    // Select elements
+    const bannerImg = document.querySelector('.my-images');
+    const bannerImgWrapper = document.querySelector('.banner-img');
+
+    // Check if elements exist to avoid errors
+    if (!bannerImg || !bannerImgWrapper) {
+        console.error('Required elements are missing!');
+        return;
+    }
+
+    if (window.innerWidth < 1500) {
+        // Get the image's height
         const bannerImgHeight = bannerImg.clientHeight;
-        // Apply that to banner's height
-        // console.log(bannerImgWrapper.outerHeight);
-        bannerImgWrapper.outerHeight = `${bannerImgHeight}px`;
-        // console.log(bannerImgWrapper.outerHeight);
+
+        // Apply that to banner wrapper's height
         bannerImgWrapper.style.height = `${bannerImgHeight}px`;
+    } else {
+        // Set height to 100vh when condition doesn't meet
+        bannerImgWrapper.style.height = "100vh";
     }
 }
+
 
 window.addEventListener('DOMContentLoaded', dynamicBannerHeight);
 window.addEventListener('resize', dynamicBannerHeight);
