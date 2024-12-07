@@ -69,6 +69,8 @@ a.back-to-top {
   right: 20px;
   bottom: 20px;
   background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
 }
 
@@ -214,7 +216,7 @@ a.back-to-top {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section {
-    height: 108vh;
+    height: 118vh;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -313,8 +315,7 @@ a.back-to-top {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-backdrop-filter: brightness(88%);
-          backdrop-filter: brightness(88%);
+  backdrop-filter: brightness(88%);
   font-size: 20px;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1008,8 +1009,7 @@ a.back-to-top {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-backdrop-filter: brightness(88%);
-          backdrop-filter: brightness(88%);
+  backdrop-filter: brightness(88%);
   font-size: 20px;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1123,8 +1123,7 @@ a.back-to-top {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  -webkit-backdrop-filter: brightness(88%);
-          backdrop-filter: brightness(88%);
+  backdrop-filter: brightness(88%);
   font-size: 3rem;
   box-shadow: 0 0 20px transparent;
   cursor: pointer;
@@ -1205,4 +1204,6 @@ a.back-to-top {
   .nav-section .nav-container .navbar .active-nav {
     left: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -192,7 +192,7 @@ a.back-to-top {
     top: 0;
     overflow: hidden;
     @include mobile-only{
-        height: 108vh;
+        height: 118vh;
     }
     .banner-container{
         @include mobile-only{
