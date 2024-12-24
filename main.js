@@ -8,6 +8,16 @@
     }
 })();
 
+
+const navActive = document.querySelector(".nav-link").querySelectorAll("a");
+console.log(navActive);
+ navActive.forEach(e =>{
+    e.addEventListener("click", function(){
+        navActive.forEach(nav=>nav.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
 // navbar sticky functionality.
 (function () {
     const header = document.querySelector(".nav-section");

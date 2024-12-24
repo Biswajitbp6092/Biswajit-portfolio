@@ -28,12 +28,8 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: #000000;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -98,6 +94,11 @@ a.back-to-top {
   position: relative;
   top: 10px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar {
+    flex-wrap: nowrap;
+  }
+}
 .nav-section .nav-container .navbar::after, .nav-section .nav-container .navbar::before {
   content: "";
   position: absolute;
@@ -125,6 +126,12 @@ a.back-to-top {
     font-size: 0.5rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar .brand-name {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+}
 .nav-section .nav-container .navbar .nav-menu .nav-link {
   display: flex;
   align-items: center;
@@ -132,9 +139,19 @@ a.back-to-top {
   gap: 1.5rem;
   margin-bottom: 0;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar .nav-menu .nav-link {
+    gap: 0;
+  }
+}
 .nav-section .nav-container .navbar .nav-menu .nav-link li {
   list-style: none;
   padding-right: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar .nav-menu .nav-link li {
+    padding-right: 1.2rem;
+  }
 }
 .nav-section .nav-container .navbar .nav-menu .nav-link li a {
   text-decoration: none;
@@ -145,6 +162,11 @@ a.back-to-top {
   font-display: swap;
   font-size: 1rem;
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar .nav-menu .nav-link li a {
+    font-size: 0.9rem;
+  }
 }
 .nav-section .nav-container .navbar .nav-menu .nav-link li a:hover {
   color: #ffffff;
@@ -191,6 +213,13 @@ a.back-to-top {
   margin-right: 0.5rem;
   transition: 0.5s linear;
   border: 1px solid transparent;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-section .nav-container .navbar .nav-menu .nav-link .nav-btn {
+    padding: 5px 20px;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+  }
 }
 .nav-section .nav-container .navbar .nav-menu .nav-link .nav-btn:hover {
   background: transparent;
@@ -1340,6 +1369,9 @@ a.back-to-top {
   }
   .back-to-top {
     display: none !important;
+  }
+  html, body {
+    overflow-x: hidden;
   }
 }
 
