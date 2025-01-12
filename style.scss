@@ -426,7 +426,7 @@ a.back-to-top {
 
                     
                 }
-                .banner-dribble-icon {
+                .banner-github-icon {
                     position: absolute;
                     top: 180px;
                     right: 0px;
@@ -452,31 +452,31 @@ a.back-to-top {
                         transform: scale(1.1);
                     }                            
                 }
-                .banner-github-icon {
-                    position: absolute;
-                    top: 540px;
-                    right: -60px;
-                    border-radius: 50%;
-                    transition: all .50s ease;
-                    animation: rotate 10s infinite;
-                    @include mobile-only{
-                        top: 370px;
-                        right: 120px;
-                    }
-                    @include tablet-only{
-                        top: 450px;
-                        right: 10px;
-                    }
-                    img{
-                        @include mobile-only{
-                            width: 40px;
-                        }
-                    }
-                    &:hover{
-                        box-shadow: 0 0 20px $primary-color;
-                        transform: scale(1.1);
-                    }
-                }
+                // .banner-github-icon {
+                //     position: absolute;
+                //     top: 540px;
+                //     right: -60px;
+                //     border-radius: 50%;
+                //     transition: all .50s ease;
+                //     animation: rotate 10s infinite;
+                //     @include mobile-only{
+                //         top: 370px;
+                //         right: 120px;
+                //     }
+                //     @include tablet-only{
+                //         top: 450px;
+                //         right: 10px;
+                //     }
+                //     img{
+                //         @include mobile-only{
+                //             width: 40px;
+                //         }
+                //     }
+                //     &:hover{
+                //         box-shadow: 0 0 20px $primary-color;
+                //         transform: scale(1.1);
+                //     }
+                // }
                 @keyframes rotate {
                     0%{
                         transform: rotate(0deg);
@@ -848,6 +848,27 @@ a.back-to-top {
             }
             .project-date{
                 @include project-date();
+            }
+            a{
+                i{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $body-white;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    backdrop-filter: brightness(88%);
+                    font-size: 2rem;
+                    box-shadow: 0 0 20px transparent;
+                    cursor: pointer;
+                    transition: all .50s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                        box-shadow: 0 0 20px $primary-color;
+                    }
+
+                }
             }
         }
         .title-right{

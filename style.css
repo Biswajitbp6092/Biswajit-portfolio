@@ -498,7 +498,7 @@ a.back-to-top {
   box-shadow: 0 0 20px #d317b8;
   transform: scale(1.1);
 }
-.banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
+.banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
   position: absolute;
   top: 180px;
   right: 0px;
@@ -507,44 +507,15 @@ a.back-to-top {
   animation: rotate 10s infinite;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
+  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
     top: 220px;
     right: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon {
+  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
     top: 270px;
     right: 70px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon img {
-    width: 40px;
-  }
-}
-.banner-section .banner-container .banner-img .banner-icon .banner-dribble-icon:hover {
-  box-shadow: 0 0 20px #d317b8;
-  transform: scale(1.1);
-}
-.banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
-  position: absolute;
-  top: 540px;
-  right: -60px;
-  border-radius: 50%;
-  transition: all 0.5s ease;
-  animation: rotate 10s infinite;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
-    top: 370px;
-    right: 120px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
-    top: 450px;
-    right: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -994,6 +965,24 @@ a.back-to-top {
   font-weight: 100;
   color: #ffffff;
   font-size: calc(0.875rem + 1.5vw);
+}
+.project-section .Project-container .project-titel a i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 2rem;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.project-section .Project-container .project-titel a i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #d317b8;
 }
 .project-section .Project-container .title-right {
   text-align: right;
