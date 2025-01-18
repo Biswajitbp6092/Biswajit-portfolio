@@ -485,7 +485,7 @@ li {
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-icon .banner-behance-icon {
     top: 220px;
-    left: 150px;
+    left: 120px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -514,7 +514,7 @@ li {
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-section .banner-container .banner-img .banner-icon .banner-github-icon {
     top: 220px;
-    right: 150px;
+    right: 120px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -564,7 +564,7 @@ li {
     width: 50px;
     height: 50px;
     top: 350px;
-    left: 110px;
+    left: 80px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
