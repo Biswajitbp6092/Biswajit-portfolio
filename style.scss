@@ -15,6 +15,22 @@ a{
 li{
     list-style: none;    
 }
+.whatsapp-btn{
+    width: 60px;
+    position: fixed;
+    right: 0;
+    top: 75%;
+    z-index: 99;
+    @include mobile-only{
+        bottom: 10px;
+        width: 40px;
+    }
+    @include tablet-only{
+        bottom: 10px;
+        width: 40px;
+
+    }
+}
 
 .is-sticky {
     position: fixed !important;

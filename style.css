@@ -41,6 +41,26 @@ li {
   list-style: none;
 }
 
+.whatsapp-btn {
+  width: 60px;
+  position: fixed;
+  right: 0;
+  top: 75%;
+  z-index: 99;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .whatsapp-btn {
+    bottom: 10px;
+    width: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .whatsapp-btn {
+    bottom: 10px;
+    width: 40px;
+  }
+}
+
 .is-sticky {
   position: fixed !important;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
