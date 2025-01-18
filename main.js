@@ -98,20 +98,20 @@ $(document).ready(function () {
         });
     })();
 
-    (function () {
-        // dynamically added the back to top button.
-        $('body').append('<a href="#" class="back-to-top">Back to Top</a>');
-        var amountScrolled = window.outerHeight;
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > amountScrolled) {
-                $('a.back-to-top').fadeIn('slow');
-            } else {
-                $('a.back-to-top').fadeOut('slow');
-            }
-        });
-        $('a.back-to-top').click(function () {
-            $('html').animate({ scrollTop: 0 }, 500);
-            return false;
-        });
-    })();
+    // (function () {
+    //     // dynamically added the back to top button.
+    //     $('body').append('<a href="#" class="back-to-top">Back to Top</a>');
+    //     var amountScrolled = window.outerHeight;
+    //     $(window).scroll(function () {
+    //         if ($(window).scrollTop() > amountScrolled) {
+    //             $('a.back-to-top').fadeIn('slow');
+    //         } else {
+    //             $('a.back-to-top').fadeOut('slow');
+    //         }
+    //     });
+    //     $('a.back-to-top').click(function () {
+    //         $('html').animate({ scrollTop: 0 }, 500);
+    //         return false;
+    //     });
+    // })();
 });

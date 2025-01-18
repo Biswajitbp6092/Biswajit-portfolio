@@ -44,9 +44,10 @@ li {
 .whatsapp-btn {
   width: 60px;
   position: fixed;
-  right: 0;
-  top: 75%;
+  right: 10px;
+  bottom: 10px;
   z-index: 99;
+  animation: heartbeat 0.9s infinite alternate;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .whatsapp-btn {
@@ -61,6 +62,11 @@ li {
   }
 }
 
+@keyframes heartbeat {
+  to {
+    transform: scale(1.1);
+  }
+}
 .is-sticky {
   position: fixed !important;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -77,27 +83,6 @@ li {
   }
   to {
     transform: translateY(0);
-  }
-}
-a.back-to-top {
-  display: none;
-  width: 60px;
-  height: 60px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 20px;
-  background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  animation: heartbeat 0.9s infinite alternate;
-}
-
-@keyframes heartbeat {
-  to {
-    transform: scale(1.1);
   }
 }
 .nav-section {

@@ -18,9 +18,10 @@ li{
 .whatsapp-btn{
     width: 60px;
     position: fixed;
-    right: 0;
-    top: 75%;
+    right: 10px;
+    bottom: 10px;
     z-index: 99;
+    animation:  heartbeat .9s infinite alternate;
     @include mobile-only{
         bottom: 10px;
         width: 40px;
@@ -29,6 +30,11 @@ li{
         bottom: 10px;
         width: 40px;
 
+    }
+}
+@keyframes heartbeat{
+    to{
+        transform: scale(1.1);
     }
 }
 
@@ -50,26 +56,26 @@ li{
         transform: translateY(0);
     }
 }
-a.back-to-top {
-    display: none;
-    width: 60px;
-    height: 60px;
-    text-indent: -9999px;
-    position: fixed;
-    z-index: 999;
-    right: 20px;
-    bottom: 20px;
-    background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    animation:  heartbeat .9s infinite alternate;
-}
-@keyframes heartbeat{
-    to{
-        transform: scale(1.1);
-    }
-}
+// a.back-to-top {
+//     display: none;
+//     width: 60px;
+//     height: 60px;
+//     text-indent: -9999px;
+//     position: fixed;
+//     z-index: 999;
+//     right: 20px;
+//     bottom: 20px;
+//     background: #690ceb url("./assets/arrow-up.svg") no-repeat center 43%;
+//     -webkit-border-radius: 30px;
+//     -moz-border-radius: 30px;
+//     border-radius: 30px;
+//     animation:  heartbeat .9s infinite alternate;
+// }
+// @keyframes heartbeat{
+//     to{
+//         transform: scale(1.1);
+//     }
+// }
 
 
 // ==============nav section =================
